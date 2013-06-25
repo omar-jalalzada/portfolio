@@ -6,6 +6,13 @@
 @import "base";
 @import "index";
 
+@import "home";
+
+
+@import "projects/projects_base";
+@import "projects/moovweb";
+@import "projects/eats";
+
 // ----------------------------------------
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing

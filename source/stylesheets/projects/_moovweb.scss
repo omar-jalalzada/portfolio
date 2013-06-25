@@ -1,0 +1,12 @@
+body.projects_eats {
+  background-color: $secondary-color;
+  
+  .main_header {
+    background-image: none;
+    background-color: $primary-color;
+  }
+
+  .timeline {
+    height: 5000px;
+  } 
+}
