@@ -39,21 +39,7 @@ body.index {
       }
     }
 
-    .main_work {
-      background-color: $primary-color;
-      border-bottom: 2px solid darken($primary-color, 10%);
-      padding-bottom: 40px;
-      .cat_header {
-        text-shadow: 0 1px darken($primary-color, 20%);
-      }
-      .showcase {
-        max-width: 600px;
-        margin: 80px auto;
-        .custom_round_containers {
-          margin: auto;
-        }
-      }
-    }
+
     .main_about_me {
       padding-top: 100px;
       padding-bottom: 100px;
