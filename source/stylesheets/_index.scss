@@ -1,4 +1,88 @@
-.main_grand_container {
+body.index {
+  background-color: #eee;
+  height: 100%;
+  display: block;
+
+  .main_inner_container {
+    min-width: 320px;
+
+    .main_nav {
+      background-color: $primary-color;
+      border-top: 2px solid darken($primary-color, 10%);
+      height: 170px;
+      .row {
+        max-width: 600px;
+        margin: -65px auto 0 auto;
+        .custom_round_containers {
+          
+        } 
+      }
+    }
+
+    .main_about_me {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      .cat_header {
+        h5 {
+          color: $black;
+        }
+      }
+      .main_about_me_content {
+        max-width: 600px;
+        margin: auto;
+        p {
+          padding: 10px 0;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .main_lets_talk {
+      border-bottom: 2px solid darken($black, 80%);
+      border-top: 2px solid darken($black, 80%);
+      background-color: $black;
+      padding: 50px 0;
+      color: white;
+      .cat_header {
+        max-width: 600px;
+        margin: 0 auto;        
+        h5 {
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+      .main_lets_talk_content {
+        max-width: 600px;
+        margin: 0 auto;
+        form {
+          fieldset {
+            color: transparent;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            legend {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 
 
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .main_nav  {
+    .row {
+      margin-top: -45px !important;
+    }
+    .custom_round_containers {
+      height: 80px;
+      width: 80px;
+    }
+  }
 }

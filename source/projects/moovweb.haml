@@ -5,13 +5,44 @@
         .page_title
           %a{:href=>'/'}
             %h1 OMAR JALALZADA
-            %h2 moovweb
-  .main_timeline 
-    .row
-      .columns
-        .timeline
+            %h5 Moovweb
 
   .main_projects
     .row
-      .columns
-        = partial "partials/project_list"
+      .cat_header
+        %h5
+          Making the brand
+    .row.main_projects_content
+      .columns.small-6.large-3
+        .custom_round_containers
+          %ul.clearing-thumbs.clearing-feature{:data => { :clearing => true}}
+            %li.clearing-featured-img
+              %a{:href=>"#{lorem.image('1200x1200')}"}
+                %img{:data => { :caption => "omar-caption111"},:src=>"#{lorem.image('110x110')}"}
+            %li
+              %a{:href=>"#{lorem.image('1200x1202')}"}
+                %img{:data => { :caption => "omar-caption222"},:src=>"#{lorem.image('110x110')}"}
+            %li
+              %a{:href=>"#{lorem.image('1200x1203')}"}
+                %img{:data => { :caption => "omar-caption333"},:src=>"#{lorem.image('110x110')}"}
+
+          
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110')}"}
+
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110')}"}
+
+
+  
+  .main_work
+    .row
+      .cat_header
+        %h5 Additional Projects
+    .row.showcase
+      = partial "partials/project_list"

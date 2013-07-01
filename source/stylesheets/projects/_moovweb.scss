@@ -1,12 +1,28 @@
 body.projects_moovweb {
-  background-color: $secondary-color;
   
+  .page_title {
+    h1 {
+      color: white;
+    }
+    h5 {
+     color: white;
+    }
+  }
+
   .main_header {
     background-image: none;
-    background-color: $primary-color;
+  }
+
+  .main_projects {
+
+    .main_projects_content {
+      max-width: 600px;
+      margin: 0 auto;      
+    }
   }
 
   .timeline {
-    height: 5000px;
+    height: 500px;
+    border: 1px solid red;
   } 
 }
