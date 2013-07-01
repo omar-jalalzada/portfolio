@@ -74,7 +74,6 @@ body {
 .cat_header {
   margin: 0 auto;
   overflow: hidden;
-  
   text-align: center;
   h5 {
     border-bottom: 1px solid rgba(#333, .3);
@@ -86,9 +85,6 @@ body {
   background-color: $primary-color;
   border-bottom: 2px solid darken($primary-color, 10%);
   padding-bottom: 40px;
-  .cat_header {
-    text-shadow: 0 1px darken($primary-color, 20%);
-  }
   .showcase {
     max-width: 600px;
     margin: 80px auto;

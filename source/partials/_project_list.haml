@@ -1,11 +1,11 @@
 .columns.small-6.large-3
   .custom_round_containers
-    %a{:href=>'projects/moovweb.html'}
-      %img{:src=>"#{lorem.image('110x110')}"}
+    - link_to '/projects/moovweb.html'do
+      = image_tag "#{lorem.image('110x110', :text =>'Moovwweb')}"
 .columns.small-6.large-3
   .custom_round_containers
-    %a{:href=>'projects/eats.html'}
-      %img{:src=>"#{lorem.image('110x110')}"}
+    - link_to '/projects/eats.html'do
+      = image_tag "#{lorem.image('110x110', :text =>'Eats')}"
 .columns.small-6.large-3
   .custom_round_containers
     %img{:src=>"#{lorem.image('110x110')}"}
