@@ -1,12 +1,33 @@
 body.projects_eats {
-  background-color: $primary-color;
-  
+  background-color: $black;  
+  color: white;
+
   .main_header {
     background-image: none;
-    background-color: $black;
+    background-color: $primary-color;
   }
 
-  .timeline {
-    height: 5000px;
-  } 
+  .main_conatainers {
+    p {
+      padding: 10px;
+    }
+  }
+
+  .main_conatainers {
+    padding: 40px 0;
+    h5 {
+      color: white;
+      border-bottom-color: white;
+    }
+  }
+  .main_showcase {
+    .columns{
+      margin: 15px auto;
+    }
+  }
+  .main_additional_efforts {
+    padding: 40px 0;
+    background-color: tint($black, 25%); 
+  }
+
 }

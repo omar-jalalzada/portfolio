@@ -3,20 +3,20 @@ body {
 }
 
 .custom_round_containers {
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   overflow: hidden;
   background-color: white;
   border: 1px solid #fff;
   @include radius(50%);
-  @include box-shadow(0 0 0 5px rgba($black, .5));
+  @include box-shadow(0 0 0 3px rgba($black, .5));
   @include transition(box-shadow .2s ease-out,transform .1s ease-in);
   margin: 10px auto;
   &:hover {
     border: 2px solid #fff;
-    @include box-shadow(0 0 0 8px rgba($black, .7));
+    @include box-shadow(0 0 0 5px rgba($black, .7));
     @include transition(box-shadow .2s ease-out,transform .1s ease-in);
-    @include transform(scale(0.95));
+    @include transform(scale(0.97));
   }
 }
 
@@ -41,18 +41,17 @@ body {
     border-left: 1px solid rgba(#fff, 0.3);
     padding: 100px 0 10px 20px;
     margin-left: 50%;
-    text-shadow: 0 1px #000;
+    text-shadow: 0 1px rgba(0,0,0,0.8);
+    
     h1 {
-      color: white;
+      color: #fff;
       line-height: 1.5;
-      // font-size: 26px;
       margin: 0;
     }
     h5 {
-     line-height: 1.5;
-     color: #fff;
-     //font-size: 14px;
-     font-weight: 100;
+      color: #fff;
+      line-height: 1.5;
+      font-weight: 100;
     }
   }
 }
@@ -100,6 +99,6 @@ footer {
   background-color: black;
   padding: 20px;
   text-align: center;
-  color: rgba(#fff, .2);
+  color: rgba(#fff, .5);
   font-size: 14px;
 }
