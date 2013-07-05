@@ -16,26 +16,38 @@
         %h5
           Building the brand
     .row.main_projects_content.max_width_center
-      / .columns.small-6.large-3
-      /   .custom_round_containers
-      /     %ul.clearing-thumbs.clearing-feature{:data => { :clearing => true}}
-      /       %li.clearing-featured-img
-      /         %a{:href=>"#{lorem.image('1200x1200')}"}
-      /           %img{:data => { :caption => "omar-caption111"},:src=>"#{lorem.image('110x110')}"}
-      /       %li
-      /         %a{:href=>"#{lorem.image('1200x1202')}"}
-      /           %img{:data => { :caption => "omar-caption222"},:src=>"#{lorem.image('110x110')}"}
-      /       %li
-      /         %a{:href=>"#{lorem.image('1200x1203')}"}
-      /           %img{:data => { :caption => "omar-caption333"},:src=>"#{lorem.image('110x110')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          .main_slide_show_container
+            .main_trigger
+              %img{:src=>"#{lorem.image('110x110',:text =>'Branding Guideline')}"}
+            %span.main_img
+              .main_img_1
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_1_brand')}"}
+              .main_img_2
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_2_brand')}"}
+              .main_img_3
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_3_brand')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          .main_slide_show_container
+            .main_trigger
+              %img{:src=>"#{lorem.image('110x110',:text =>'Corporate Site')}"}
+            %span.thumbs.site
+              .thumb_img_1
+                %img{:data_src=>"#{lorem.image('100x100',:text =>'thumb_1_corp_site')}"}
+              .thumb_img_2
+                %img{:data_src=>"#{lorem.image('100x100',:text =>'thumb_2_corp_site')}"}
+              .thumb_img_3
+                %img{:data_src=>"#{lorem.image('100x100',:text =>'thumb_3_corp_site')}"}
+            %span.main_img
+              .main_img_1
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_1_corp_site')}"}
+              .main_img_2
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_2_corp_site')}"}
+              .main_img_3
+                %img{:data_src=>"#{lorem.image('600x500',:text =>'main_3_corp_site')}"}
 
-          
-      .columns.small-6.large-3
-        .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Branding Guideline')}"}
-      .columns.small-6.large-3
-        .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Corporate Site')}"}
       .columns.small-6.large-3
         .custom_round_containers
           %img{:src=>"#{lorem.image('110x110',:text =>'Blog')}"}
