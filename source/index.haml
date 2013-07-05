@@ -2,14 +2,11 @@
 title: Omar Jalalzada - Homepage
 ---
 .main_inner_container
-  .main_header
-    .row
-      .columns
-        .page_title
-          %h1 OMAR JALALZADA
-          %h5 designer & front-end developer
+  = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "designer & front-end developer" }
+
+  
   .main_nav
-    .row
+    .row.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
           %a{:href=>"#project_list"}
@@ -26,23 +23,16 @@ title: Omar Jalalzada - Homepage
         .custom_round_containers
           %a{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
             %img{:src=>"#{lorem.image('110x110',:text =>'blog')}"}
+
   = partial "partials/project_list"
-  / .main_work
-  /   .row
-  /     .cat_header
-  /       %h5 I craft experiences that resonates with humans. 
-  /   .row.showcase
-  /     = partial "partials/project_list"
 
   .main_about_me#about_me
-    .row
+    .row.max_width_center
       .cat_header
-        %h5 Learn, implement, re-learn, repeat.
-    .row
+        %h5.icon_before_title Learn, implement, re-learn, repeat.
+    .row.max_width_center
       .main_about_me_content
         .large-12.columns
-          %p 
-            = lorem.paragraph
           %p 
             = lorem.paragraph
           %p 
@@ -50,6 +40,9 @@ title: Omar Jalalzada - Homepage
 
 
   .main_lets_talk#talk_to_me
+    .row.max_width_center
+      .cat_header.color_white
+        %h5.icon_before_title Let’s Work Together
     .row.max_width_center
       .columns.small-6.large-3
         .custom_round_containers

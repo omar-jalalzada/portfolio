@@ -1,11 +1,5 @@
 .main_inner_container
-  .main_header
-    .row
-      .columns
-        .page_title
-          %a{:href=>'/'}
-            %h1 OMAR JALALZADA
-            %h5 Agrion
+  = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Agrion" }
   
   .main_showcase.main_conatainers
     .row

@@ -9,9 +9,8 @@ body.index {
     .main_nav {
       background-color: $primary-color;
       border-top: 2px solid darken($primary-color, 10%);
-      height: 120px;
+      padding-bottom: 80px;
       .row {
-        max-width: 600px;
         margin: -65px auto 0 auto;
         .custom_round_containers {
           
@@ -19,19 +18,24 @@ body.index {
       }
     }
 
+    .main_nav_to_work {
+      padding-bottom: 80px;
+      h5 {
+        color: white;
+        border-bottom-color: white;
+      }
+    }
+
+
     .main_about_me {
       padding-top: 100px;
       padding-bottom: 100px;
       .cat_header {
-        max-width: 600px;
-        margin: 0 auto;  
         h5 {
           color: $black;
         }
       }
       .main_about_me_content {
-        max-width: 600px;
-        margin: auto;
         p {
           padding: 10px 0;
           margin: 10px 0;
@@ -46,11 +50,10 @@ body.index {
       padding: 50px 0;
       color: white;
       .cat_header {
-        max-width: 600px;
-        margin: 0 auto;        
         h5 {
-          color: #fff;
+          color: #fff;  
         }
+        
       }
       .main_lets_talk_content {
         max-width: 600px;
