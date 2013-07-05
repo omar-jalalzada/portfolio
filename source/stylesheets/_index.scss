@@ -9,7 +9,7 @@ body.index {
     .main_nav {
       background-color: $primary-color;
       border-top: 2px solid darken($primary-color, 10%);
-      height: 170px;
+      height: 120px;
       .row {
         max-width: 600px;
         margin: -65px auto 0 auto;
@@ -24,7 +24,7 @@ body.index {
       padding-bottom: 100px;
       .cat_header {
         max-width: 600px;
-        margin: 0 auto;   
+        margin: 0 auto;  
         h5 {
           color: $black;
         }

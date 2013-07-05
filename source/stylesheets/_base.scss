@@ -57,7 +57,10 @@ body {
   }
 }
 
-
+.max_width_center {
+  max-width: 600px;
+  margin: 0 auto;   
+}
 
 @media only screen and (max-width: 480px) {
   .main_header {
@@ -81,13 +84,12 @@ body {
   }
 }
 
-.main_work {
+.main_nav_to_work {
   background-color: $primary-color;
   border-bottom: 2px solid darken($primary-color, 10%);
-  padding-bottom: 40px;
+  padding: 40px 0;
   .showcase {
     max-width: 600px;
-    margin: 80px auto;
     .custom_round_containers {
     //  margin: auto;
     }

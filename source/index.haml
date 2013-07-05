@@ -12,25 +12,29 @@ title: Omar Jalalzada - Homepage
     .row
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110')}"}
+          %a{:href=>"#project_list"}
+            %img{:src=>"#{lorem.image('110x110',:text =>'Work')}"}
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110')}"}
+          %a{:href=>"#about_me"}
+            %img{:src=>"#{lorem.image('110x110',:text =>'About me')}"}
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110')}"}
+          %a{:href=>"#talk_to_me"}
+            %img{:src=>"#{lorem.image('110x110',:text =>'Contact me')}"}
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110')}"}
+          %a{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            %img{:src=>"#{lorem.image('110x110',:text =>'blog')}"}
+  = partial "partials/project_list"
+  / .main_work
+  /   .row
+  /     .cat_header
+  /       %h5 I craft experiences that resonates with humans. 
+  /   .row.showcase
+  /     = partial "partials/project_list"
 
-  .main_work
-    .row
-      .cat_header
-        %h5 I craft experiences that resonates with humans. 
-    .row.showcase
-      = partial "partials/project_list"
-
-  .main_about_me
+  .main_about_me#about_me
     .row
       .cat_header
         %h5 Learn, implement, re-learn, repeat.
@@ -45,22 +49,17 @@ title: Omar Jalalzada - Homepage
             = lorem.paragraph
 
 
-  .main_lets_talk
-    .row
-      .cat_header
-        %h5 Talk to me!
-    .row
-      .main_lets_talk_content
-        %form
-          %fieldset
-            %legend contact us form
-            .row
-              .large-12.columns
-                %input{:placeholder => "Full Name", :type => "text"}/
-            .row
-              .large-12.columns
-                %input{:placeholder => "Email Address", :type => "text"}/
-            .row
-              .large-12.columns
-                %textarea{:placeholder => "Happy Thoughts"}
-            %a.button.primary.radius.right{:href=>"#"} Submit
+  .main_lets_talk#talk_to_me
+    .row.max_width_center
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110',:text =>'Email')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110',:text =>'Call')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110',:text =>'Tweet')}"}
+      .columns.small-6.large-3
+        .custom_round_containers
+          %img{:src=>"#{lorem.image('110x110',:text =>'Linkedin')}"}
