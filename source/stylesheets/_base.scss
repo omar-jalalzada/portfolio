@@ -1,5 +1,6 @@
 body {
   min-width: 320px;
+  font-family:  "museo-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
 }
 
 .custom_round_containers {
@@ -15,8 +16,11 @@ body {
   &:hover {
     border: 2px solid #fff;
     @include box-shadow(0 0 0 5px rgba($black, .7));
-    @include transition(box-shadow .2s ease-out,transform .1s ease-in);
+    @include transition(box-shadow .1s ease-out,transform .1s ease-in);
     @include transform(scale(0.97));
+  }
+  &:active {
+    @include box-shadow(0 0 0 5px darken($primary-color, 5%));
   }
 }
 
@@ -148,9 +152,9 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-color: darken($secondary-color, 10%);
   padding: 20px;
   text-align: center;
-  color: rgba(#fff, .5);
+  color: rgba(#fff, .3);
   font-size: 14px;
 }

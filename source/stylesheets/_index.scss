@@ -44,10 +44,10 @@ body.index {
     }
 
     .main_lets_talk {
-      border-bottom: 2px solid darken($black, 80%);
-      border-top: 2px solid darken($black, 80%);
-      background-color: $black;
-      padding: 50px 0;
+      //border-bottom: 2px solid darken($secondary-color, 20%);
+      border-top: 2px solid darken($secondary-color, 10%);
+      background-color: $secondary-color;
+      padding: 100px 0;
       color: white;
       .cat_header {
         h5 {
