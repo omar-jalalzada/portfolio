@@ -158,3 +158,44 @@ footer {
   color: rgba(#fff, .3);
   font-size: 14px;
 }
+
+
+
+
+
+#main_slideshow_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  .main_inner_container {
+    max-width: 600px;
+    margin: 0 auto;
+    .main_img_container {
+      max-width: 600px;
+      background-color: blue;
+      margin: 10px;
+    }
+    .thumb_container {
+      margin: 10px; 
+    }
+  }
+  #close_slideshow {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+}
+
+
+
+
+
+
+
