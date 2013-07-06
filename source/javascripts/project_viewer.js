@@ -5,6 +5,8 @@ $( document ).ready(function() {
   $(".main_project_viewer_container").each(function( index ) {
     console.log( index + ": " + $(this).children(".main_trigger") );
     $(this).children(".main_trigger").on('click', function(e){
+      var t_pos = $(this).offset().top;
+      var t_pos_r = Math.round(t_pos);
       
       // scroll to the top once clicked
       $("html, body").animate({ scrollTop: 0 }, 200);
@@ -21,6 +23,7 @@ $( document ).ready(function() {
       // Close button
       $("#close_project_viewer").on('click', function(){
         $(this).parent().remove()
+        $("html, body").animate({ scrollTop: t_pos_r - 50 }, 200);
       })
 
       // Find the thumbnails and add them inside the wrapper
