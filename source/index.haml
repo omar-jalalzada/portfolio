@@ -4,19 +4,18 @@ title: Omar Jalalzada - Homepage
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "designer & front-end developer" }
-
   
   .main_nav
     .row.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
-          %a.work{:href=>"#project_list"} Work
+          %a.work{:onclick=>"scroll_to_el('project_list')"} Work
       .columns.small-6.large-3
         .custom_round_containers
-          %a.about_me{:href=>"#about_me"} About
+          %a.about_me{:onclick=>"scroll_to_el('about_me')"} About
       .columns.small-6.large-3
         .custom_round_containers
-          %a.talk_to_me{:href=>"#talk_to_me"} Contact
+          %a.talk_to_me{:onclick=>"scroll_to_el('talk_to_me')"} Contact
       .columns.small-6.large-3
         .custom_round_containers
           %a.blog{:href=>"http://blog.ojtwisted.com", :target=>"_blank"} Blog
