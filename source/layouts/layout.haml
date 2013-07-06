@@ -15,9 +15,7 @@
     %title= data.page.title || "Omar Jalalzada"
     / Included CSS Files
     = stylesheet_link_tag "app"
-    = javascript_include_tag "foundation/modernizr.foundation"
-    = javascript_include_tag "foundation/jquery"
-    = javascript_include_tag "project_viewer"
+
 
     / = javascript_include_tag "foundation/jquery.foundation.clearing"
     
@@ -27,4 +25,7 @@
       = yield
       = partial "partials/sections/footer"
     / Application Javascript, safe to override
-    = javascript_include_tag "app"
+    /= javascript_include_tag "app"
+    = javascript_include_tag "foundation/modernizr.foundation"
+    = javascript_include_tag "foundation/jquery"
+    = javascript_include_tag "functions"
