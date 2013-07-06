@@ -163,29 +163,41 @@ footer {
 
 
 
-#main_slideshow_hover {
+#main_project_viewer_hover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  @include background(linear-gradient(top left, black, rgba(0,0,0,0.8) 20%));
+
   .main_inner_container {
     max-width: 600px;
     margin: 0 auto;
+    .main_content {
+      color: white;
+      padding-top: 100px;
+      h3 {
+        color: white;
+      }
+    }
     .main_img_container {
       max-width: 600px;
-      background-color: blue;
       margin: 10px;
+      img {
+        margin: 10px 0;
+      }
     }
     .thumb_container {
       margin: 10px; 
     }
   }
-  #close_slideshow {
-    width: 60px;
-    height: 60px;
-    background-color: yellow;
+  #close_project_viewer {
+    padding: 20px;
+    background-color: $alert-color;
+    color: white;
+    text-align: center;
+    font-weight: bold;
     position: fixed;
     top: 0;
     right: 0;
