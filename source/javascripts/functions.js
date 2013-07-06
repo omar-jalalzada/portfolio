@@ -24,6 +24,11 @@ $( document ).ready(function() {
         $("html, body").animate({ scrollTop: t_pos_r - 50 }, 200);
       })
 
+      $("#main_project_viewer_hover").on('click', function(e){
+        if( e.target == this ) 
+          $(this).remove();
+          $("html, body").animate({ scrollTop: t_pos_r - 50 }, 200);
+      });
       // Find the thumbnails and add them inside the wrapper
       $(this).siblings('.main_img').children("img").each(function(){
         var current_value = $(this).attr("data_src")
