@@ -1,6 +1,7 @@
 // Your custom settings file to override Foundation defaults
 @import "compass/css3";
-@import "settings";
+@import "utils/settings";
+@import "utils/retina-sprites";
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 @import "base";

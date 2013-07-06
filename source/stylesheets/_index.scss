@@ -13,7 +13,26 @@ body.index {
       .row {
         margin: -65px auto 0 auto;
         .custom_round_containers {
-          
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #eee;
+          }
+          .work {
+            @include retina-sprite(work);
+          }
+          .about_me {
+            @include retina-sprite(aboutme);
+          }
+
+          .talk_to_me {
+            @include retina-sprite(contact);
+          }
+          .blog {
+            @include retina-sprite(blog);
+          }
+
         } 
       }
     }

@@ -8,13 +8,13 @@ body {
   width: 100px;
   overflow: hidden;
   background-color: white;
-  border: 1px solid #fff;
+  border: 1px solid #aaa;
   @include radius(50%);
   @include box-shadow(0 0 0 3px rgba($black, .5));
   @include transition(box-shadow .2s ease-out,transform .1s ease-in);
   margin: 10px auto;
   &:hover {
-    border: 2px solid #fff;
+    border: 2px solid #aaa;
     @include box-shadow(0 0 0 5px rgba($black, .7));
     @include transition(box-shadow .1s ease-out,transform .1s ease-in);
     @include transform(scale(0.97));
@@ -120,6 +120,10 @@ body {
   }
 }
 
+.main_trigger {
+  cursor: pointer;
+}
+
 .cat_header {
   margin: 0 auto;
   overflow: hidden;
@@ -146,7 +150,6 @@ body {
   .showcase {
     max-width: 600px;
     .custom_round_containers {
-    //  margin: auto;
     }
   }
 }
@@ -160,17 +163,13 @@ footer {
 }
 
 
-
-
-
 #main_project_viewer_hover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  @include background(linear-gradient(top left, black, rgba(0,0,0,0.8) 20%));
-
+  @include background(linear-gradient(top left, black, rgba(0,0,0,0.8) 40%));
   .main_inner_container {
     max-width: 600px;
     margin: 0 auto;
@@ -201,8 +200,8 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
+    cursor: pointer;
   }
-
 }
 
 
