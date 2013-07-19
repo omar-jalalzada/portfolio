@@ -17,73 +17,109 @@ title: Omar Jalalzada - Moovweb
   .main_projects.cat_main_container
     .row
       .cat_header
-        %h5
+        %h5.max_width_center
           Building the brand
     .row.main_projects_content.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
           .main_project_viewer_container
-            .main_trigger
-              %img{:src=>"#{lorem.image('100x100',:text =>'Brand', :background_color => '#999', :color => "#fff")}"}
+            %a.main_trigger
+              .bg_img
+              .text Branding Guideline
             = partial "projects/moovweb_assets/branding_guideline"
 
       .columns.small-6.large-3
         .custom_round_containers
           .main_project_viewer_container
-            .main_trigger
-              %img{:src=>"#{lorem.image('100x100',:text =>'Corporate Site')}"}
+            %a.main_trigger
+              .bg_img
+              .text Corporate Website
             = partial "projects/moovweb_assets/corporate_site"
 
       .columns.small-6.large-3
         .custom_round_containers
           .main_project_viewer_container
-            .main_trigger
-              %img{:src=>"#{lorem.image('100x100',:text =>'Blog')}"}
+            %a.main_trigger
+              .bg_img
+              .text Blog
             = partial "projects/moovweb_assets/blog"
       .columns.small-6.large-3
         .custom_round_containers
           .main_project_viewer_container
-            .main_trigger
-              %img{:src=>"#{lorem.image('100x100',:text =>'Social')}"}
+            %a.main_trigger
+              .bg_img
+              .text Social Media
             = partial "projects/moovweb_assets/social"
     
   .special_projects.cat_main_container
     .row
       .cat_header
-        %h5
+        %h5.max_width_center
           Special Projects
     .row.main_projects_content.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Harlem Shake')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Harlem Shake
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Whitepaper')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text White Paper
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Console')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Console
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Promotions')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Promotions
+            = partial "projects/moovweb_assets/social"
     
   .mobile_projects.cat_main_container
     .row
       .cat_header
-        %h5
+        %h5.max_width_center
           Mobile Projects
     .row.main_projects_content.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Invitrogen')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Invitrogen
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Vitamin World')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Vitamin World
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Ticket Web')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text TicketWeb
+            = partial "projects/moovweb_assets/social"
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Life Technologies')}"}
+          .main_project_viewer_container
+            %a.main_trigger
+              .bg_img
+              .text Life Technologies
+            = partial "projects/moovweb_assets/social"
 
   
   = partial "partials/project_list"

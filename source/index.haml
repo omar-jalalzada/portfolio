@@ -9,16 +9,24 @@ title: Omar Jalalzada - Homepage
     .row.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
-          %a.work{:onclick=>"scroll_to_el('project_list')"} Work
+          %a.work{:onclick=>"scroll_to_el('project_list')"}
+            .bg_img
+            .text Work
       .columns.small-6.large-3
         .custom_round_containers
-          %a.about_me{:onclick=>"scroll_to_el('about_me')"} About
+          %a.about_me{:onclick=>"scroll_to_el('about_me')"}
+            .bg_img
+            .text About
       .columns.small-6.large-3
         .custom_round_containers
-          %a.talk_to_me{:onclick=>"scroll_to_el('talk_to_me')"} Contact
+          %a.talk_to_me{:onclick=>"scroll_to_el('talk_to_me')"}
+            .bg_img
+            .text Contact
       .columns.small-6.large-3
         .custom_round_containers
-          %a.blog{:href=>"http://blog.ojtwisted.com", :target=>"_blank"} Blog
+          %a.blog{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            .bg_img
+            .text Blog
 
   = partial "partials/project_list"
 
@@ -42,13 +50,23 @@ title: Omar Jalalzada - Homepage
     .row.max_width_center
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Email')}"}
+          %a.email{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            .bg_img
+            .text Email
+
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Call')}"}
+
+          %a.Call{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            .bg_img
+            .text Call
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Tweet')}"}
+          %a.tweet{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            .bg_img
+            .text @ojtwisted
       .columns.small-6.large-3
         .custom_round_containers
-          %img{:src=>"#{lorem.image('110x110',:text =>'Linkedin')}"}
+          %a.email{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
+            .bg_img
+            .text Linkedin

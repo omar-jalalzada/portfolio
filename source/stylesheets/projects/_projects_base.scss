@@ -1,0 +1,11 @@
+body.projects {
+	.custom_round_containers {
+		.text {
+			color: $black;
+			line-height: 1.4;
+		}
+		.content, .main_img {
+			display: none;
+		}
+	}
+}

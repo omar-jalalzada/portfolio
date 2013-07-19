@@ -81,7 +81,9 @@
 /* ======== In production, I would abstract all of the following into it's own SCSS file ======== */
 
 
-$sprites: sprite-map("sprites/icons/*.png");              // import 1x sprites from buttons subfolder 
-$sprites2x: sprite-map("sprites-retina/icons/*.png");  
+// $sprites: sprite-map("sprites/icons/*.png");              // import 1x sprites from buttons subfolder 
+$sprites: sprite-map("sprites/*/*.png");              // import 1x sprites from buttons subfolder 
+// $sprites2x: sprite-map("sprites-retina/icons/*.png");  
+$sprites2x: sprite-map("sprites-retina/*/*.png");  
 
 
