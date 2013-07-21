@@ -35,6 +35,13 @@ page "humans.txt", :layout => false
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
+
+# activate :blog do |blog|
+#   # set options on blog
+# end
+
+# activate :directory_indexes
+
 ###
 # Helpers
 ###
