@@ -6,6 +6,11 @@ body.index {
   .main_inner_container {
     min-width: 320px;
 
+    .main_header {
+      background-image: image-url("homepage.jpg");
+    }
+
+
     .main_nav {
       background-color: $primary-color;
       border-top: 2px solid darken($primary-color, 10%);
