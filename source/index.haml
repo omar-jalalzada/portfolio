@@ -42,31 +42,38 @@ title: Omar Jalalzada - Homepage
           %p 
             = lorem.paragraph
 
-
   .main_lets_talk#talk_to_me
     .row.max_width_center
-      .cat_header.color_white
-        %h5.icon_before_title Let’s Work Together
+      .columns.small-4.large-4
+        %a.email
+          .bg_img
+          .text 
+            %span.has-tip.tip-top{:title=>"Copy to clipboard", " data-tooltip " => true} omar@ojtwisted
+        
+      .columns.small-4.large-4
+        %a.call
+          .bg_img
+          .text 
+            %span.has-tip.tip-top{:title=>"Copy to clipboard", " data-tooltip " => true} 
+              (650)388-0106
+        
+      .columns.small-4.large-4
+        %a.twitter{:href=>"https://twitter.com/ojtwisted", :target=> "_blank"}
+          .bg_img
+          .text @ojtwisted
+        
     .row.max_width_center
-      .columns.small-6.large-3
-        .custom_round_containers
-          %a.email{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
-            .bg_img
-            .text Email
-
-      .columns.small-6.large-3
-        .custom_round_containers
-
-          %a.Call{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
-            .bg_img
-            .text Call
-      .columns.small-6.large-3
-        .custom_round_containers
-          %a.tweet{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
-            .bg_img
-            .text @ojtwisted
-      .columns.small-6.large-3
-        .custom_round_containers
-          %a.email{:href=>"http://blog.ojtwisted.com", :target=>"_blank"}
-            .bg_img
-            .text Linkedin
+      .columns.small-4.large-4
+        %a{:href=>"http://www.linkedin.com/profile/view?id=71647679", :target=> "_blank"}
+          .bg_img
+          .text Linkedin
+        
+      .columns.small-4.large-4
+        %a{:href=>"http://dribbble.com/ojtwisted", :target=> "_blank"}
+          .bg_img
+          .text Dribble
+        
+      .columns.small-4.large-4
+        %a{:href=>"https://scoutzie.com/omar-jalalzada", :target=> "_blank"}
+          .bg_img
+          .text Scoutzie
