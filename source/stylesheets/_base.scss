@@ -214,12 +214,13 @@ body {
 
 footer {
   background-color: darken($secondary-color, 10%);
+  border-top: 2px solid darken($secondary-color, 12%);
   padding: 20px;
   text-align: center;
   color: rgba(#fff, .1);
   font-size: 14px;
   font-weight: lighter;
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 
