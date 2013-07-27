@@ -24,8 +24,9 @@
     .main_grand_container
       = yield
       = partial "partials/sections/footer"
-    / Application Javascript, safe to override
-    /= javascript_include_tag "app"
-    = javascript_include_tag "foundation/modernizr.foundation"
-    = javascript_include_tag "foundation/jquery"
+    = javascript_include_tag "vendor/custom.modernizr"
+    = javascript_include_tag "vendor/jquery"
+    = javascript_include_tag "foundation.min"
     = javascript_include_tag "functions"
+    :javascript
+      $(document).foundation();
