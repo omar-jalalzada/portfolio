@@ -6,52 +6,75 @@ title: Omar Jalalzada - Eats, a mobile app
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Eats, a mobile app" }
   
   .main_brief.main_conatainers  
-    .row
-      .columns.small-12.large-6
+    .row.max_width_center
+      .columns.small-12.large-12
         %p
-          = lorem.paragraph
-      .columns.small-12.large-6
-        %p 
-          = lorem.paragraph
+          Eats is a personal project that started from the basic idea of how to keep track of your habits and spendings when it comes to food.
+        
+        %p
+          It worked its way from coffee shop conversations to doodles to sketches and then to full fidelity mock-ups. Due to an overloaded schedule and a full time job, my dream of making this a reality is still a dream.
+          If your a developer and would like to colaborate, please get in touch.
+
+        .designed
+          .title I designed Eats to enable users:
+          %ul
+            %li Keep track of what you eat and how much you spend on food.
+            %li Share your story and interact with friends.
+            %li Explore food in the area through friends. 
+            %li Stay motivated to eat better, healthier and cheaper.
 
   .main_showcase.main_conatainers
-    .row
+    .row.max_width_center
       .cat_header
         %h5
           Mobile App
-    .row.margin_bottom
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-    .row
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
+    .row.max_width_center
+      .columns
+        %img{:src=>"/images/projects/eats/homescreen.jpg"}
+        %span Splash Screen
+      .columns
+        %img{:src=>"/images/projects/eats/login.jpg"}
+        %span Login Screen, Facebook and Twitter enabled
+      .columns
+        %img{:src=>"/images/projects/eats/sign_up.jpg"}
+        %span Sign Up
+      .columns
+        %img{:src=>"/images/projects/eats/feed.jpg"}
+        %span Activity Feed, Focus on the image
+      .columns
+        %img{:src=>"/images/projects/eats/navigation.jpg"}
+        %span Pull Down Nav, Gesture enabled navigation
+      .columns
+        %img{:src=>"/images/projects/eats/create_post.jpg"}
+        %span Upload Form
+      .columns
+        %img{:src=>"/images/projects/eats/individual_post.jpg"}
+        %span Individual Post View
+      .columns
+        %img{:src=>"/images/projects/eats/location.jpg"}
+        %span Individual location posts
+      .columns
+        %img{:src=>"/images/projects/eats/profile.jpg"}
+        %span User Profile
+      .columns
+        %img{:src=>"/images/projects/eats/calendar_view.jpg"}
+        %span Calendar View, Financial summary for your daily, weekly and monthly consumptions
 
   .main_additional_efforts.main_conatainers
-    .row
+    .row.max_width_center
       .cat_header
-        %h5
-          Additional Research
-    .row
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x320')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x320')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x320')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x320')}"}
+        %h5 Wireframes & Market Research
+    .row.max_width_center
+      .columns
+        %img{:src=>"/images/projects/eats/wf_flow.jpeg"}
+        %span Wireframe & Sketches
+
+      .columns
+        %img{:src=>"/images/projects/eats/wf_logic.jpeg"}
+        %span Application Flow & UX Study
+      .columns
+        %img{:src=>"/images/projects/eats/wf_layout.jpeg"}
+        %span Logical Interactions & Calendar View
 
   = partial "partials/project_list"
         

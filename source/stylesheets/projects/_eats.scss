@@ -3,15 +3,16 @@ body.projects_eats {
   color: white;
 
   .main_header {
-    // background-image: none;
+    background-image: image-url("projects/cover_eats.jpg");
     background-color: $primary-color;
-  }
-
-  .main_conatainers {
-    p {
-      padding: 10px;
+    .custom_img {
+      width: 400px;
+      height: 400px;
+      margin: 150px auto 0;
+      background-image: image-url("projects/cover_eats_1.png");
     }
   }
+
 
   .main_conatainers {
     padding: 40px 0;
@@ -20,14 +21,47 @@ body.projects_eats {
       border-bottom-color: white;
     }
   }
-  .main_showcase {
-    .columns{
-      margin: 15px auto;
+
+  .main_brief {
+
+    .designed {
+      .title {
+        margin: 30px 0 10px 0;
+        display: block;
+      }
+      ul {
+        li {
+          margin-left: 17px;
+        }
+      }
     }
+  }
+
+  .main_conatainers {
+    .columns{
+      margin: 25px auto;
+      img {
+        border: 1px solid rgba(250,250,250,0.2);
+        @include box-shadow(0 0 2px #000);
+        @include border-radius(5px);
+        overflow: hidden;
+      }
+      span {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+  .main_showcase {
+    border-bottom: 2px solid shade($black, 2%);
   }
   .main_additional_efforts {
     padding: 40px 0;
-    background-color: tint($black, 25%); 
+    background-color: tint($black, 5%); 
+    
   }
 
 }
