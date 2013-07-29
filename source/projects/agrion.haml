@@ -5,30 +5,35 @@ title: Omar Jalalzada - Agrion
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Agrion" }
-  
+
   .main_showcase.main_conatainers
-    .row
-      .cat_header
-        %h5
-          Branding
-    .row.margin_bottom
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-    .row
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
-      .columns.small-6.large-3
-        %img{:src=>"#{lorem.image('320x480')}"}
+    / .row.max_width_center
+    /   .cat_header
+    /     %h5
+    /       Mobile App
+    .row.max_width_center
+      .columns
+        %img{:src=>"/images/projects/agrion/logo.jpg"}
+        %span Splash Screen
+      .columns
+        %img{:src=>"/images/projects/agrion/color_pallete.jpg"}
+        %span Login Screen, Facebook and Twitter enabled
+      .columns
+        %img{:src=>"/images/projects/agrion/stationary.jpg"}
+        %span Sign Up
+      .columns
+        %img{:src=>"/images/projects/agrion/badge.jpg"}
+        %span Activity Feed, Focus on the image
+      .columns
+        %img{:src=>"/images/projects/agrion/social.jpg"}
+        %span Pull Down Nav, Gesture enabled navigation
+      .columns
+        %img{:src=>"/images/projects/agrion/web_wireframe_1.jpg"}
+        %span Upload Form
+      .columns
+        %img{:src=>"/images/projects/agrion/web_wireframe.jpg"}
+        %span Individual Post View
+
 
   = partial "partials/project_list"
         
