@@ -19,13 +19,15 @@ body.projects {
         @include box-shadow(0 0 2px #000);
         @include border-radius(5px);
         overflow: hidden;
+        margin: auto;
+        display: block;
       }
       span {
         display: block;
         padding: 10px;
         text-align: center;
         display: block;
-        margin: 0;
+        margin: auto;
       }
     }
   }

@@ -38,3 +38,15 @@ body.projects_moovweb {
   } 
 }
 
+
+@media only screen and (max-width: 480px) {
+  body.projects_moovweb {
+    .main_header {
+      height: 450px;
+      .custom_img {
+        height: 350px;
+        background-size: 100% auto;
+      }
+    }
+  }
+}

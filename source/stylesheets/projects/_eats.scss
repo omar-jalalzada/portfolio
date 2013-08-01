@@ -6,10 +6,13 @@ body.projects_eats {
     background-image: image-url("projects/cover_eats.jpg");
     background-color: $primary-color;
     .custom_img {
-      width: 400px;
-      height: 400px;
-      margin: 150px auto 0;
+      width: 70%;
+      max-width: 400px;
+      height: 300px;
+      margin: 14% auto 0;
       background-image: image-url("projects/cover_eats_1.png");
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -23,7 +26,9 @@ body.projects_eats {
   }
 
   .main_brief {
-
+    .inner_width {
+      max-width: 700px;
+    }
     .designed {
       .title {
         margin: 30px 0 10px 0;
@@ -37,24 +42,6 @@ body.projects_eats {
     }
   }
 
-  .main_conatainers {
-    .columns{
-      margin: 25px auto;
-      img {
-        border: 1px solid rgba(250,250,250,0.2);
-        @include box-shadow(0 0 2px #000);
-        @include border-radius(5px);
-        overflow: hidden;
-      }
-      span {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        display: block;
-        margin: 0;
-      }
-    }
-  }
   .main_showcase {
     border-bottom: 2px solid shade($black, 2%);
   }
