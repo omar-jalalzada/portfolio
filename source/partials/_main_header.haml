@@ -9,3 +9,5 @@
         %h5
           ="#{sub_title}"
   .custom_img
+    - if defined?(img_url)
+      %img{:src=>img_url}

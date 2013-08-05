@@ -33,7 +33,11 @@ body.projects {
   }
 
 
-
+  .main_project_viewer_container {
+    .content, .main_img {
+      display: none;
+    }
+  }
 
 
 

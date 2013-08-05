@@ -6,13 +6,18 @@ body.projects_eats {
     background-image: image-url("projects/cover_eats.jpg");
     background-color: $primary-color;
     .custom_img {
-      width: 70%;
-      max-width: 400px;
+      width: 55%;
+      max-width: 405px;
       height: 300px;
       margin: 14% auto 0;
-      background-image: image-url("projects/cover_eats_1.png");
-      background-size: cover;
-      background-position: center;
+      display: block;
+      img {
+        margin: auto;
+      }
+      // background-image: image-url("projects/cover_eats_1.png");
+      // background-size: 100% auto;
+      // background-repeat: no-repeat;
+      // background-position: center;
     }
   }
 
