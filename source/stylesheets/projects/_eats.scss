@@ -1,6 +1,5 @@
 body.projects_eats {
-  background-color: $black;  
-  color: white;
+
 
   .main_header {
     background-image: image-url("projects/eats/cover.jpg");
@@ -31,6 +30,9 @@ body.projects_eats {
   }
 
   .main_brief {
+    background-color: $black;
+    border-top: 2px solid tint($black, 2%);
+    color: white;
     .inner_width {
       max-width: 700px;
     }
@@ -48,6 +50,7 @@ body.projects_eats {
   }
 
   .main_showcase {
+    background-color: $black;
     border-bottom: 2px solid shade($black, 2%);
   }
   .main_additional_efforts {

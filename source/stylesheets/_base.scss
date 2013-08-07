@@ -2,6 +2,9 @@ body {
   min-width: 320px;
   font-family:  "adelle", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
   font-weight: 300;
+  p {
+    font-weight: 300;
+  }
 }
 
 .custom_round_containers {
@@ -181,11 +184,15 @@ body {
 
 .main_nav_to_work {
   background-color: $primary-color;
+
   border-bottom: 2px solid darken($primary-color, 10%);
   border-top: 2px solid darken($primary-color, 10%);
   padding: 40px 0;
   .cat_header {
     margin-bottom: 40px;
+    h5 {
+      color: white;
+    }
   }
   .showcase {
     max-width: 600px;

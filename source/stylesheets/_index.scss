@@ -56,6 +56,10 @@ body.index {
         h5 {
           color: $black;
         }
+        .icon_before_title::before {
+          @include retina-sprite(mail);
+          border: none;
+        }
       }
       .main_about_me_content {
         p {
@@ -111,6 +115,15 @@ body.index {
         }
         &.twitter .text:before{
           @include retina-sprite(twitter);
+        }
+        &.dribble .text:before{
+          @include retina-sprite(dribble);
+        }
+        &.linkedin .text:before{
+          @include retina-sprite(linkedin);
+        }
+        &.scoutzie .text:before{
+          @include retina-sprite(scoutzie);
         }
       }
 
