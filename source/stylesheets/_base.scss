@@ -12,6 +12,9 @@ body {
   width: 110px;
   a {
     display: block;
+    &.idle {
+      opacity: 0.5;
+    }
     .bg_img {
       @include radius(50%);
       @include box-shadow(0 0 0 3px rgba($black, .5), inset 0 0 0 1px rgba(250,250,250,0.2));
@@ -200,9 +203,6 @@ body {
       .text {
         text-shadow: 0 1px 0 darken($primary-color, 10%);
         color: white;
-      }
-      &.idle .bg_img{
-        opacity: 0.5;
       }
       &.moovweb a .bg_img{
         @include retina-sprite(moovweb);
