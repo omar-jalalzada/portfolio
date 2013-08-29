@@ -52,6 +52,9 @@ body.projects_eats {
   .main_showcase {
     background-color: $black;
     border-bottom: 2px solid shade($black, 2%);
+    .row span {
+      color: white;
+    }
   }
   .main_additional_efforts {
     padding: 40px 0;
