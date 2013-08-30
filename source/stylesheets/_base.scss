@@ -204,6 +204,9 @@ body {
         text-shadow: 0 1px 0 darken($primary-color, 10%);
         color: white;
       }
+      .bg_img {
+        @include retina-sprite(default);
+      }
       &.moovweb a .bg_img{
         @include retina-sprite(moovweb);
       }
