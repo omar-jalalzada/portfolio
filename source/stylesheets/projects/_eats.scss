@@ -59,7 +59,9 @@ body.projects_eats {
   .main_additional_efforts {
     padding: 40px 0;
     background-color: tint($black, 5%); 
-    
+    span {
+      color: white;
+    }
   }
 
 }

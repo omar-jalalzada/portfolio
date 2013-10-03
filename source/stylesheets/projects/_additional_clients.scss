@@ -1,0 +1,61 @@
+body.projects_additional_clients {
+
+
+  .main_header {
+    background-image: image-url("projects/additional/cover.jpg");
+    height: 400px;
+    .custom_img {
+      height: 300px;
+      max-width: 600px;
+      margin: 120px auto 0;
+      
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+    }
+  }
+
+
+  // .page_title {
+  //   h1 {
+  //     color: white;
+  //   }
+  //   h5 {
+  //    color: white;
+  //   }
+  // }
+
+  .cat_main_container {
+    padding: 40px 0;
+
+    .custom_round_containers {
+      .text {
+        line-height: 1.5;
+      }
+      a {
+        .text {
+          color: #333;  
+        }
+        
+        .bg_img {
+          background-size: cover;
+        }
+        &.virtus .bg_img {
+          background-image: image-url("projects/additional/nav_virtus.png");
+        }
+        &.wondersitter .bg_img {
+          background-image: image-url("projects/additional/nav_ws.png");
+        }
+        &.explory .bg_img {
+          background-image: image-url("projects/additional/nav_explory.png");
+        }
+        &.agrion .bg_img {
+          background-image: image-url("projects/additional/nav_agrion.png");
+        }
+      }
+    }
+
+  }
+
+
+
+}

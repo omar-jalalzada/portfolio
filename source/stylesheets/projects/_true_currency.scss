@@ -1,0 +1,17 @@
+body.projects_true_currency {
+  background-color: $black;  
+  color: white;
+
+
+  .main_header {
+    background-color: $primary-color;
+    background-image: image-url("projects/twurrl/cover.jpg");
+    height: 320px;
+  }
+  .main_brief {
+    .inner_width {
+      max-width: 700px;
+      margin: auto;
+    }
+  }
+}

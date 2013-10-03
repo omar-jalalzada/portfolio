@@ -200,25 +200,28 @@ body {
   .showcase {
     max-width: 600px;
     .custom_round_containers {
+      a .bg_img {
+        background-color: #ddd;
+        background-image: image-url("sprites/project_list_sprite.png");
+        background-size: 400px 100px;
+        &.idle {
+          background-image: image-url("sprites/projetc_list_default.png");
+          background-position-x: 0px !important;
+          background-size: auto;
+        }
+      }
       .text {
         text-shadow: 0 1px 0 darken($primary-color, 10%);
         color: white;
       }
-      .bg_img {
-        @include retina-sprite(default);
-      }
+
       &.moovweb a .bg_img{
-        @include retina-sprite(moovweb);
-      }
+        background-position-x: -200px; }
       &.eats a .bg_img{
-        @include retina-sprite(eats);
-      }
-      &.agrion a .bg_img{
-        @include retina-sprite(agrion);
-      }
-      &.virtus a .bg_img{
-        @include retina-sprite(virtus);
-      }
+        background-position-x: -100px; }
+      &.twurrl a .bg_img{
+        background-position-x: -300px; }
+      // &.clients a .bg_img{}
     }
   }
 }

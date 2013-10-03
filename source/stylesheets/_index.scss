@@ -20,21 +20,19 @@ body.index {
         .custom_round_containers {
           a .bg_img {
             background-color: #ddd;
+            background-image: image-url("sprites/main_nav_sprite.png");
+            background-size: 400px 200px;
+            &:hover {
+              background-position-y: -100px;
+            }
           }
-          .work .bg_img {
-            @include retina-sprite(work);
-          }
+          // .work .bg_img {}
           .about_me .bg_img {
-            @include retina-sprite(aboutme);
-          }
-
+            background-position-x: -100px; }
           .talk_to_me .bg_img {
-            @include retina-sprite(contact);
-          }
+            background-position-x: -200px; }
           .blog .bg_img {
-            @include retina-sprite(blog);
-          }
-
+            background-position-x: -300px; }
         } 
       }
     }
@@ -57,7 +55,7 @@ body.index {
           color: $black;
         }
         .icon_before_title::before {
-          @include retina-sprite(mail);
+          // @include retina-sprite(mail);
           border: none;
         }
       }
@@ -102,30 +100,25 @@ body.index {
             display: block;
             float: left;
             margin-right: 10px;
-            @include retina-sprite(mail);
+            background-image: image-url("sprites/connect_icons_sprite.png");
+            background-size: 90px 60px;
           }
         }
         &:hover {
           opacity: 0.8;
         }
-        &.email .text:before{
-          @include retina-sprite(mail);
-        }
+        // &.email .text:before{}
+           
         &.call .text:before{
-          @include retina-sprite(call);
-        }
+          background-position-x: -30px; }
         &.twitter .text:before{
-          @include retina-sprite(twitter);
-        }
+          background-position: 0 -30px; }
         &.dribble .text:before{
-          @include retina-sprite(dribble);
-        }
+          background-position-x: -60px; }
         &.linkedin .text:before{
-          @include retina-sprite(linkedin);
-        }
+          background-position: -30px -30px; }
         &.scoutzie .text:before{
-          @include retina-sprite(scoutzie);
-        }
+          background-position: -60px -30px; }
       }
 
     }
