@@ -1,0 +1,6 @@
+.main_navigator_container
+  .inner_navigator_container.max_width_center
+    .container
+      %a.prev{:href=>"#{prev_link}", :class=>"#{prev_state}"}
+      %a.grid{:onclick=>"scroll_to_el('project_list')"}
+      %a.next{:href=>"#{next_link}", :class=>"#{next_state}"}

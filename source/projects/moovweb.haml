@@ -4,6 +4,8 @@ title: Omar Jalalzada - Moovweb
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Moovweb" }
+
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"#", :next_link=> "eats.html", :prev_state =>"disabled", :next_state=>"active" }
   
   .main_brief.cat_main_container  
     .row.max_width_center

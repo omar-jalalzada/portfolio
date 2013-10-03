@@ -1,15 +1,4 @@
 body.projects {
-	// .custom_round_containers {
-	// 	.text {
-	// 		color: $black;
-	// 		line-height: 1.4;
-	// 	}
-	// 	.content, .main_img {
-	// 		display: none;
-	// 	}
-	// }
-
-
 
   .main_conatainers {
     .columns{
@@ -30,6 +19,14 @@ body.projects {
         margin: auto;
       }
     }
+
+    &.main_brief {
+      p.links {
+        a {
+          display: block;
+        }
+      }
+    }
   }
 
 
@@ -38,9 +35,6 @@ body.projects {
       display: none;
     }
   }
-
-
-
 
 
 
@@ -61,6 +55,10 @@ body.projects {
         max-width: 600px;
         h3 {
           color: white;
+        }
+        p.credits {
+          font-size: 12px;
+          opacity: 0.8;
         }
       }
       .main_img_container {

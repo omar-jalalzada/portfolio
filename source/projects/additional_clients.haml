@@ -4,7 +4,9 @@ title: Omar Jalalzada - Web Design
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Additional Projects" }
-  
+
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"true_currency.html", :next_link=> "#", :prev_state =>"active", :next_state=>"disabled" }
+
   / .main_brief.cat_main_container  
   /   .row.max_width_center
   /     .columns
@@ -17,28 +19,29 @@ title: Omar Jalalzada - Web Design
           Desktop and mobile projects
     .row.main_projects_content.max_width_center
 
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          .main_project_viewer_container
-            %a.main_trigger.virtus
-              .bg_img
-              .text Virtus
-            = partial "projects/additional_clients_assets/true_currency"
 
       .columns.small-6.medium-3.large-3
         .custom_round_containers
           .main_project_viewer_container
-            %a.main_trigger.wondersitter
+            %a.main_trigger.virtus.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
               .bg_img
-              .text WonderSitter
-            = partial "projects/additional_clients_assets/true_currency"
+              .text Virtus
+            // = partial "projects/additional_clients_assets/true_currency"
+
       .columns.small-6.medium-3.large-3
         .custom_round_containers
           .main_project_viewer_container
-            %a.main_trigger.explory
+            %a.main_trigger.wondersitter.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
+              .bg_img
+              .text WonderSitter
+            // = partial "projects/additional_clients_assets/true_currency"
+      .columns.small-6.medium-3.large-3
+        .custom_round_containers
+          .main_project_viewer_container
+            %a.main_trigger.explory.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
               .bg_img
               .text Explory
-            = partial "projects/additional_clients_assets/true_currency"
+            // = partial "projects/additional_clients_assets/true_currency"
 
       .columns.small-6.medium-3.large-3
         .custom_round_containers
@@ -46,7 +49,7 @@ title: Omar Jalalzada - Web Design
             %a.main_trigger.agrion
               .bg_img
               .text Agrion
-            = partial "projects/additional_clients_assets/true_currency"
+            = partial "projects/additional_clients_assets/agrion"
 
 
   = partial "partials/project_list"

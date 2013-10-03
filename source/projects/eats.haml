@@ -4,7 +4,7 @@ title: Omar Jalalzada - Eats, a mobile app
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Eats, a mobile app", :img_url => "/images/projects/eats/cover_1.png" }
-  
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"moovweb.html", :next_link=> "true_currency.html", :prev_state =>"active", :next_state=>"active" }
   .main_brief.main_conatainers  
     .row
       .columns.small-12.large-12

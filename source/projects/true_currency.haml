@@ -5,34 +5,37 @@ title: Omar Jalalzada - True Currency a Twurrl Company
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "True Currency" }
-
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"eats.html", :next_link=> "additional_clients.html", :prev_state =>"active", :next_state=>"active" }
   .main_brief.main_conatainers  
     .row
       .columns.small-12.large-12
         .inner_width
-          %p I was assigned to present a re-branding concepts for Agrion. This project was presented to the team in San Francisco, CA and Paris, France for review. 
-
+          %p Working with the founders of Twurrl, we needed to  effectively and intuitively utilize the Twurrl database so we can help frequent travelers save money while shopping.
           
-          %p Agrion brings together entrepreneurs, investors and corporations involved in energy, clean-tech, raw materials, sustainable development, mobility and urban management.
+          %p International travelers lose money all the time when purchasing products abroad. True Currency collects and analyzes product prices worldwide to help you minimize that loss.
 
+          %p.links
+            %a{:href=>""} &#187; Interactive InVission Wireframe
+            %a{:href=>""} &#187; Website
+            
   .main_showcase.main_conatainers
     .row
       .columns.large-12
         %img{:src=>"/images/projects/twurrl/branding.jpg"}
-        %span Logo; representing connecting, sustainability, development, platform
+        %span Branding guideline
+        
       .columns.large-12
         %img{:src=>"/images/projects/twurrl/home.jpg"}
-        %span Color Palette
+        %span Landing page
       .columns.large-12
         %img{:src=>"/images/projects/twurrl/compare_category.jpg"}
-        %span Stationary; business card, file, letterhead and envelope
-      .columns.large-12
-        %img{:src=>"/images/projects/twurrl/compare_products.jpg"}
-        %span Badge for conferences and networking events
+        %span Compare page, category view
       .columns.large-12
         %img{:src=>"/images/projects/twurrl/compare_brand.jpg"}
-        %span Template for emails and social platforms
-
+        %span Compare page, brand view
+      .columns.large-12
+        %img{:src=>"/images/projects/twurrl/compare_products.jpg"}
+        %span Compare page, product view
 
 
   = partial "partials/project_list"

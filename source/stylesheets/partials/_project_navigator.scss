@@ -1,0 +1,41 @@
+.main_navigator_container {
+  margin-top: -60px;  
+  height: 60px;
+  // border: 1px solid green;
+  z-index: 9999;
+  .inner_navigator_container {
+    overflow: hidden;
+    // border: 1px solid yellow;
+    .container {
+      float: right;
+      display: block;
+      overflow: hidden;
+      // border: 1px solid red;
+    }
+    a {
+      // border: 1px solid blue;
+      display: block;
+      width: 60px;
+      height: 60px;
+      float: left;
+      overflow: hidden;
+      background-color: rgba(0,0,0,0.3);
+      margin-left: 1px;
+      background-image: image-url("sprites/project_navigator_sprite.png");
+      background-size: 180px 60px;
+      &:hover {
+        background-color: rgba(0,0,0,0.2);
+      }
+      &.grid {
+        background-position-x: -60px;
+      }
+      &.next {
+        background-position-x: -120px;
+      }
+      &.disabled {
+        opacity: 0.3;
+        background-color: rgba(0,0,0,0.2);  
+      }
+    }
+  }
+}
