@@ -1,5 +1,6 @@
 body {
   min-width: 320px;
+  width: 320px;
   font-family:  "adelle", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
   font-weight: 300;
   p {
@@ -137,7 +138,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .main_header {
-    background-size: 190%;
+    background-size: 200%;
     height: 300px;
     .bar1 { visibility: hidden;}
     .bar2 { display: none;}
