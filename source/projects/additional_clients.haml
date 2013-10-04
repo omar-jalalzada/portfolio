@@ -5,7 +5,7 @@ title: Omar Jalalzada - Web Design
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Additional Projects" }
 
-  = partial "partials/_project_navigator", :locals => {:prev_link =>"true_currency.html", :next_link=> "#", :prev_state =>"active", :next_state=>"disabled" }
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"true_currency.html", :next_link=> "branding.html", :prev_state =>"active", :next_state=>"active" }
 
   / .main_brief.cat_main_container  
   /   .row.max_width_center
@@ -31,14 +31,14 @@ title: Omar Jalalzada - Web Design
       .columns.small-6.medium-3.large-3
         .custom_round_containers
           .main_project_viewer_container
-            %a.main_trigger.wondersitter.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
+            %a.main_trigger.wondersitter.idle.has-tip.tip-top{:title=>"Stealth Mode", " data-tooltip " => true}
               .bg_img
               .text WonderSitter
             // = partial "projects/additional_clients_assets/true_currency"
       .columns.small-6.medium-3.large-3
         .custom_round_containers
           .main_project_viewer_container
-            %a.main_trigger.explory.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
+            %a.main_trigger.explory.idle.has-tip.tip-top{:title=>"Stealth Mode", " data-tooltip " => true}
               .bg_img
               .text Explory
             // = partial "projects/additional_clients_assets/true_currency"
