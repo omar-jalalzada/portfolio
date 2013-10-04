@@ -1,5 +1,18 @@
 body.projects {
 
+
+  .main_header {
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: top center;
+    background-size: auto 60%;
+    height: 400px;
+    overflow: hidden;
+    .inner_container {
+      overflow: hidden;
+    }
+  }
+
   .main_containers {
     .columns{
       margin: 25px auto;
@@ -89,4 +102,16 @@ body.projects {
     }
   }
 
+}
+
+
+@media only screen and (max-width: 480px) {
+  body.projects .main_inner_container .main_header {
+    background-size: 170%;
+    background-position-x: -100px; 
+    height: 200px;
+    .custom_img {
+      display: none;
+    }
+  }
 }

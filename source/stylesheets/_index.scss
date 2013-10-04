@@ -8,6 +8,10 @@ body.index {
 
     .main_header {
       background-image: image-url("homepage.jpg");
+      height: 650px;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-size: cover;
     }
 
 
@@ -125,4 +129,10 @@ body.index {
 
 
 }
-
+@media only screen and (max-width: 480px) {
+  body.index .main_inner_container .main_header {
+    background-size: 170%;
+    background-position-x: -100px; 
+    height: 300px;
+  }
+}

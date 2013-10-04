@@ -1,7 +1,13 @@
 body.projects_branding {
+
+
+    .main_header {
+      background-image: image-url("projects/branding/cover.jpg");
+    }
+
+
   .main_containers {
     .columns span {
-      // text-align: left;
       font-size: 14px;
       line-height: 1.8;
       color: lighten($secondary-color, 40%);

@@ -3,10 +3,12 @@ body.projects_moovweb {
 
   .main_header {
     background-image: image-url("projects/moovweb/cover.jpg");
+    height: 650px;
+    background-size: cover;
     .custom_img {
       height: 500px;
       max-width: 600px;
-      margin: 120px auto 0;
+      margin: 0px auto 0;
       background-image: image-url("projects/moovweb/cover_1.png");
       background-repeat: no-repeat;
       background-position: 0px 0px;
@@ -76,19 +78,4 @@ body.projects_moovweb {
     height: 500px;
     border: 1px solid red;
   } 
-}
-
-
-@media only screen and (max-width: 480px) {
-  body.projects_moovweb {
-
-    .main_header {
-      background-size: 400%;
-      height: 450px;
-      .custom_img {
-        height: 350px;
-        background-size: 100% auto;
-      }
-    }
-  }
 }

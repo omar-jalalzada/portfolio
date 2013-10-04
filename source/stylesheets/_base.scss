@@ -56,13 +56,7 @@ body {
 .main_header {
   background-color: $black;
   color: white;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  overflow: hidden;
-
-
+  overflow: hidden; 
   .bar1 {
     float: left;
     width: 10%;
@@ -126,8 +120,6 @@ body {
 
 @media only screen and (max-width: 480px) {
   .main_header {
-    background-size: 200%;
-    height: 300px;
     .bar1 { visibility: hidden;}
     .bar2 { display: none;}
     .bar3 { width: 75%;}
