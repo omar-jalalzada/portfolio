@@ -106,8 +106,8 @@ body.projects {
 
 @media only screen and (max-width: 560px) {
   body.projects .main_inner_container .main_header {
-    background-size: 170%;
-    background-position-x: -100px; 
+    background-size: auto 34%;
+    // background-position-x: -100px; 
     height: 200px;
     .custom_img {
       display: none;
