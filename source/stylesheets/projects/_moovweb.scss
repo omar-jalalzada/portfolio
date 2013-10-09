@@ -14,8 +14,9 @@ body.projects_moovweb {
   }
 
   .main_containers {
-    padding: 40px 0;
+    padding-top: 40px;
     &.main_brief {
+      padding: 90px 0 50px 0;
       background-color: darken($secondary-color, 5%);
       border-bottom: 1px solid darken($secondary-color, 8%);
       // background-color: $primary-color;
@@ -33,8 +34,8 @@ body.projects_moovweb {
     }
   }
 
-  .cat_header .detail .credits {
-    font-size: 13px;
+  p.credits {
+    font-size: 14px;
   }
 
 
@@ -83,12 +84,7 @@ body.projects_moovweb {
         }
       }
     }
-
   }
 
-
-  // .main_trigger .text {
-  //   color: inherit;
-  // }
 
 }

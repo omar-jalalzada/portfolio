@@ -15,7 +15,7 @@ body.projects {
 
   .main_containers {
     .columns{
-      margin: 25px auto;
+      margin: 0 auto 35px auto;
       img {
         @include border-radius(2px);
         @include box-shadow(0 0 1px #000);
@@ -64,14 +64,13 @@ body.projects {
       .main_content {
         color: white;
         padding-top: 100px;
-        max-width: 600px;
         h3 {
           color: white;
         }
-        p.credits {
-          font-size: 12px;
-          opacity: 0.8;
+        p {
+          max-width: 650px;
         }
+        
       }
       .main_img_container {
         img {
