@@ -6,15 +6,17 @@ body.projects_fine_arts {
 
 
   .main_containers {
+    padding: 90px 0;
     &.main_brief {
       background-color: $secondary-color;
       color: white;
     }
     &.main_afghanistan {
-      background-color: lighten($black, 2%);
+      background-color: #252525;
     }
     &.main_idiomatic {
-      background-color: lighten($black, 5%);
+      background-color: #1d1d1d;
+      border-top: 1px solid #151515;
     }
   }
 

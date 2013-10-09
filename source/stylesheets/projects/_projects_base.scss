@@ -13,6 +13,17 @@ body.projects {
     }
   }
 
+  p.credits {
+    font-size: 14px;
+  }
+  p.links {
+    font-size: 14px;
+    a {
+      display: block;
+    } 
+  }
+
+
   .main_containers {
     .columns{
       margin: 0 auto 35px auto;
@@ -22,21 +33,6 @@ body.projects {
         overflow: hidden;
         margin: auto;
         display: block;
-      }
-      // span {
-      //   display: block;
-      //   padding: 10px;
-      //   text-align: center;
-      //   display: block;
-      //   margin: auto;
-      // }
-    }
-
-    &.main_brief {
-      p.links {
-        a {
-          display: block;
-        }
       }
     }
   }

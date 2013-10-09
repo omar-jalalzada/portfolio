@@ -1,6 +1,4 @@
 body.projects_eats {
-
-
   .main_header {
     background-image: image-url("projects/eats/cover.jpg");
     .custom_img {
@@ -11,10 +9,9 @@ body.projects_eats {
       display: block;
     }
   }
-
-
+  
   .main_containers {
-    padding: 40px 0;
+    padding: 90px 0;
   }
 
   .main_brief {
@@ -33,16 +30,8 @@ body.projects_eats {
     }
   }
 
-  .main_showcase {
-    background-color: #333;
-    border-top: 1px solid #2a2a2a;
-    .row span {
-      color: white;
-    }
-  }
   .main_additional_efforts {
     background-color: #3a3a3a;
-    padding: 40px 0;
   }
 
 }

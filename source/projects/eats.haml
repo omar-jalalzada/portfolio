@@ -5,28 +5,26 @@ title: Omar Jalalzada - Eats, a mobile app
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Eats, a mobile app", :img_url => "/images/projects/eats/cover_1.png" }
   = partial "partials/_project_navigator", :locals => {:prev_link =>"moovweb.html", :next_link=> "true_currency.html", :prev_state =>"active", :next_state=>"active", :prev_msg =>"View 'Moovweb' Project", :next_msg=>"View 'True Currency' Project" }
+
+
   .main_brief.main_containers  
     .row
       .columns.large-8
         %p
-          Eats is a personal project that started from the basic idea of how to keep track of your habits and spendings when it comes to food.
+          Eats helps you easily share pictures of the food you're eating with your friends while keeping tracking of your eating habits and spendings.
         %p
-          It worked its way from coffee shop conversations to doodles to sketches and then to full fidelity mock-ups. Due to an overloaded schedule and a full time job, my dream of making this a reality is still a dream.
-          If your a developer and would like to colaborate, please get in touch.
+          Whenever you get the munchies, Eats can also act as a visual menu for your local eateries curated by your friends. 
 
         .designed
-          .title I designed Eats to enable users:
+          .title I designed Eats to:
           %ul
+            %li Share your food and interact with friends.
             %li Keep track of what you eat and how much you spend on food.
-            %li Share your story and interact with friends.
-            %li Explore food in the area through friends. 
+            %li Explore food in the area curated by friends. 
             %li Stay motivated to eat better, healthier and cheaper.
+        %p.credits
+          Dated: 10/01/2012
 
-  .main_showcase.main_containers
-    .row
-      .columns.cat_header.color_white
-        %h5
-          Mobile App
     .row
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/homescreen.jpg"}
@@ -62,7 +60,7 @@ title: Omar Jalalzada - Eats, a mobile app
   .main_additional_efforts.main_containers
     .row
       .columns.cat_header.color_white
-        %h5 Wireframes & Market Research
+        %h5 Wire-frames & Sketches
     .row
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/wf_flow.jpeg"}

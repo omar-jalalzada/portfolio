@@ -1,17 +1,23 @@
 ---
 title: Omar Jalalzada - True Currency a Twurrl Company
 ---
-
-
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "True Currency" }
   = partial "partials/_project_navigator", :locals => {:prev_link =>"eats.html", :next_link=> "additional_clients.html", :prev_state =>"active", :next_state=>"active", :prev_msg =>"View 'Eats' Project", :next_msg=>"View 'Add. Clients' Project"}
   .main_brief.main_containers  
     .row
       .columns.small-12.large-8
-        %p Working with the founders of Twurrl, we needed to effectively and intuitively utilize Twurrl's database to help frequent travelers save money while shopping.
+        %p Working with the founders of Twurrl, we needed to effectively and intuitively utilize Twurrl's database to help frequent travelers save money while shopping. True Currency was born.
         
-        %p International travelers lose money all the time when purchasing products abroad. True Currency collects and analyzes product prices worldwide to help you minimize that loss.
+        %p I was tasked to craft the right brand, experience and design for the product.
+
+        %p.credits
+          Role: Creative Lead and Visual Designer
+          %br
+          Timeline: 2.5 Weeks
+          %br
+          Special thanks to: Pavan Trikitum
+
 
         %p.links
           %a{:href=>"http://invis.io/FUHYO869", :target=>"_blank"} &#187; Interactive InVission Wireframe
@@ -19,22 +25,16 @@ title: Omar Jalalzada - True Currency a Twurrl Company
           
   .main_showcase.main_containers
     .row
+      .columns.large-6
+        %img{:src=>"/images/projects/twurrl/home.jpg"}
+      .columns.large-6
+        %img{:src=>"/images/projects/twurrl/compare_category.jpg"}
+      .columns.large-6
+        %img{:src=>"/images/projects/twurrl/compare_brand.jpg"}
+      .columns.large-6
+        %img{:src=>"/images/projects/twurrl/compare_products.jpg"}
       .columns.large-12
         %img{:src=>"/images/projects/twurrl/branding.jpg"}
-        / %span Branding guideline
-      .columns.large-12
-        %img{:src=>"/images/projects/twurrl/home.jpg"}
-        / %span Landing page
-      .columns.large-12
-        %img{:src=>"/images/projects/twurrl/compare_category.jpg"}
-        / %span Compare page, category view
-      .columns.large-12
-        %img{:src=>"/images/projects/twurrl/compare_brand.jpg"}
-        / %span Compare page, brand view
-      .columns.large-12
-        %img{:src=>"/images/projects/twurrl/compare_products.jpg"}
-        / %span Compare page, product view
-
 
   = partial "partials/project_list"
         
