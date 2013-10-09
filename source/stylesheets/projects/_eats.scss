@@ -15,19 +15,11 @@ body.projects_eats {
 
   .main_containers {
     padding: 40px 0;
-    h5 {
-      color: white;
-      border-bottom-color: white;
-    }
   }
 
   .main_brief {
-    background-color: $black;
-    border-top: 2px solid tint($black, 2%);
+    background-color: #2a2a2a;
     color: white;
-    .inner_width {
-      max-width: 700px;
-    }
     .designed {
       .title {
         margin: 30px 0 10px 0;
@@ -42,18 +34,15 @@ body.projects_eats {
   }
 
   .main_showcase {
-    background-color: $black;
-    border-bottom: 2px solid shade($black, 2%);
+    background-color: #333;
+    border-top: 1px solid #2a2a2a;
     .row span {
       color: white;
     }
   }
   .main_additional_efforts {
+    background-color: #3a3a3a;
     padding: 40px 0;
-    background-color: tint($black, 5%); 
-    span {
-      color: white;
-    }
   }
 
 }

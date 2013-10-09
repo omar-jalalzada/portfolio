@@ -6,7 +6,7 @@ title: Omar Jalalzada - Fine Arts
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Fine Arts" }
-  = partial "partials/_project_navigator", :locals => {:prev_link =>"branding.html", :next_link=> "#", :prev_state =>"active", :next_state=>"disabled" }
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"branding.html", :next_link=> "#", :prev_state =>"active", :next_state=>"disabled", :prev_msg =>"View 'Branding' Projects", :next_msg=>"(╯°□°）╯︵ ┻━┻"}
 
   / .main_brief.main_containers  
   /   .row
@@ -19,7 +19,7 @@ title: Omar Jalalzada - Fine Arts
             
   .main_afghanistan.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Afghanistan
           %span.detail
@@ -44,7 +44,7 @@ title: Omar Jalalzada - Fine Arts
             
   .main_idiomatic.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Idiomatic Expressions
           %span.detail

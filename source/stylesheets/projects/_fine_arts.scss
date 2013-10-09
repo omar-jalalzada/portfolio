@@ -1,21 +1,11 @@
 body.projects_fine_arts {
+  
+  .main_header {
+    background-image: image-url("projects/fine_arts/cover.jpg");
+  }
+
+
   .main_containers {
-
-    .cat_header {
-      padding-top: 50px;
-      h5 {
-        font-size: 22px;
-        color: white;
-        border-bottom: 1px solid darken($secondary-color, 10%);
-        .detail {
-          display: block;
-          font-size: 14px;
-          opacity: 0.8;
-          color: lighten($black, 40%);
-
-        }
-      }
-    }
     &.main_brief {
       background-color: $secondary-color;
       color: white;

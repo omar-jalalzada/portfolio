@@ -4,8 +4,12 @@ body.projects_additional_clients {
     background-image: image-url("projects/additional/cover.jpg");
   }
 
-  .cat_main_container {
+  .main_containers {
     padding: 40px 0;
+
+    &.project_agrion {
+      background-color: $secondary-color;
+    }
     .custom_round_containers {
       .text {
         line-height: 1.5;

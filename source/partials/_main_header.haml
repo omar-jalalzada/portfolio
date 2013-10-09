@@ -1,13 +1,24 @@
 .main_header
-  .inner_container.max_width_center    
-    .bar1
-    .bar2
-    .bar3
-      %a.page_title{:href=>'/'}
-        %h1 
-          ="#{main_title}"
-        %h5
-          ="#{sub_title}"
-  .custom_img
-    - if defined?(img_url)
-      %img{:src=>img_url}
+  .row
+    .columns
+      .inner_container
+        .page_title_container
+          %a.page_title{:href=>'/'}
+            %h1 
+              ="#{main_title}"
+            %h5
+              ="#{sub_title}"
+        .bar1.bar
+        .bar2.bar
+        .bar3.bar
+        .bar4.bar
+        .bar5.bar
+        .bar6.bar
+        .bar7.bar
+        .bar8.bar
+        .bar9.bar
+        .bar10.bar
+        
+      .custom_img
+        - if defined?(img_url)
+          %img{:src=>img_url}

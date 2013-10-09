@@ -5,7 +5,7 @@ title: Omar Jalalzada - Branding Projects
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Branding Projects" }
-  = partial "partials/_project_navigator", :locals => {:prev_link =>"additional_clients.html", :next_link=> "fine_arts.html", :prev_state =>"active", :next_state=>"active" }
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"additional_clients.html", :next_link=> "fine_arts.html", :prev_state =>"active", :next_state=>"active", :prev_msg =>"View 'Add. Clients' Project", :next_msg=>"View 'Fine Arts' Project" }
 
   / .main_brief.main_containers  
   /   .row
@@ -18,7 +18,7 @@ title: Omar Jalalzada - Branding Projects
             
   .main_zeal.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Zeal
           %span.detail
@@ -48,7 +48,7 @@ title: Omar Jalalzada - Branding Projects
     
   .main_pantone.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Pantone's Tell-a-tone
           %span.detail
@@ -84,7 +84,7 @@ title: Omar Jalalzada - Branding Projects
 
   .main_island.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Island Earth Farmer's Market
           %span.detail

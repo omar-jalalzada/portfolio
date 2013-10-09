@@ -4,30 +4,50 @@ body.index {
   display: block;
 
   .main_inner_container {
-    min-width: 320px;
 
     .main_header {
+      
+      // background-image: image-url("http://farm4.staticflickr.com/3453/3771050833_e605fc7e7a_o.jpg");
+      // background-color: $primary-color;
+      // background-repeat: no-repeat;
+      // background-attachment:fixed;
+      // background-position-x: center;
+      // background-position-y: -00px;
+      // background-size: auto 130%;
+      // height: 400px;
+
+
       background-image: image-url("homepage.jpg");
-      height: 650px;
+      height: 550px;
       background-repeat: no-repeat;
       background-attachment:fixed;
       background-size: cover;
-    }
 
+    }
+    
+
+    .cat_header h5{
+      font-size: 18px;
+    }
 
     .main_nav {
       background-color: $primary-color;
-      border-top: 2px solid darken($primary-color, 10%);
-      padding-bottom: 80px;
+      border-top: 2px solid darken($primary-color, 12%);
+      padding-bottom: 50px;
       .row {
         margin: -65px auto 0 auto;
         .custom_round_containers {
-          a .bg_img {
-            background-color: #ddd;
-            background-image: image-url("sprites/main_nav_sprite.png");
-            background-size: 400px 200px;
-            &:hover {
-              background-position-y: -100px;
+          a {
+            .text {
+              font-weight: 500;
+            }
+            .bg_img {
+              background-color: #ddd;
+              background-image: image-url("sprites/main_nav_sprite.png");
+              background-size: 400px 200px;
+              &:hover {
+                background-position-y: -100px;
+              }
             }
           }
           // .work .bg_img {}
@@ -41,59 +61,45 @@ body.index {
       }
     }
 
-    .main_nav_to_work {
-      padding-bottom: 80px;
-      border-top: none;
-      h5 {
-        color: white;
-        border-bottom-color: rgba(250,250,250,0.4);
-      }
-    }
-
-
     .main_about_me {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      .cat_header {
-        h5 {
-          color: $black;
-        }
-        .icon_before_title::before {
-          // @include retina-sprite(mail);
-          border: none;
-        }
-      }
+      padding: 140px 0;
       .main_about_me_content {
         p {
           padding: 10px 0;
           margin: 10px 0;
+          // max-width: 750px;
+          font-size: 22px;
         }
       }
+
+      // .round_circle {
+      //   height: 305px;
+      //   width: 305px;
+      //   margin: 0px auto 20px;
+      //   background-color: #ddd;
+      //   @include border-radius(50%);
+      //   background-image: image-url("homepage_bio.jpg");
+      //   // background-size: 100%;
+      //   // background-position: -300px -120px;
+      //   // border: 1px solid #aaa;
+      //   // @include border-radius(2px);
+      //   @include box-shadow(0 0 1px #000);
+      // }
     }
 
     .main_lets_talk {
-      //border-bottom: 2px solid darken($secondary-color, 20%);
       border-top: 2px solid darken($secondary-color, 10%);
       background-color: $secondary-color;
-      padding: 80px 0;
+      padding: 70px 0;
       color: white;
-      // .row {
-      //   border: 1px solid red;
-      // }
-      .cat_header {
-        h5 {
-          color: #fff;
-          border-bottom-color: rgba(250,250,250,0.4);
-        }
-      }
-
       a {
         display: block;
         color: white;
-        margin: 20px auto;
-        width: 180px;
-        text-align: center;
+        margin: 10px 0;
+        padding: 20px;
         overflow: hidden;
+        font-size: 18px;
+        text-align: center;
         .text {
           display: inline-block;
           line-height: 1.7;
@@ -110,6 +116,11 @@ body.index {
         }
         &:hover {
           opacity: 0.8;
+          // background-color: rgba(100,100,100,0.1);
+          @include box-shadow (0 0 1px 1px rgba(250,250,250,0.1));
+        }
+        &.email, &.call {
+          cursor: text;
         }
         // &.email .text:before{}           
         &.call .text:before{
@@ -127,12 +138,24 @@ body.index {
     }
   }
 
-
 }
-@media only screen and (max-width: 480px) {
-  body.index .main_inner_container .main_header {
-    background-size: 170%;
-    background-position-x: -100px; 
-    height: 300px;
+
+
+@media only screen and (max-width: 560px) {
+  body.index .main_inner_container {
+    .main_header {
+      background-size: 170%;
+      background-position-x: -100px; 
+      height: 300px;
+    }
+    .main_about_me {
+      padding: 40px 0;
+      .main_about_me_content p {
+        font-size: 16px;  
+      }
+    }
+    .main_lets_talk a {
+      margin: 0 auto;
+    }
   }
 }

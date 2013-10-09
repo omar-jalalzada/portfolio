@@ -17,20 +17,19 @@ body.projects {
     .columns{
       margin: 25px auto;
       img {
-        border: 1px solid rgba(250,250,250,0.2);
-        @include box-shadow(0 0 2px #000);
-        @include border-radius(3px);
+        @include border-radius(2px);
+        @include box-shadow(0 0 1px #000);
         overflow: hidden;
         margin: auto;
         display: block;
       }
-      span {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        display: block;
-        margin: auto;
-      }
+      // span {
+      //   display: block;
+      //   padding: 10px;
+      //   text-align: center;
+      //   display: block;
+      //   margin: auto;
+      // }
     }
 
     &.main_brief {
@@ -105,7 +104,7 @@ body.projects {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
   body.projects .main_inner_container .main_header {
     background-size: 170%;
     background-position-x: -100px; 

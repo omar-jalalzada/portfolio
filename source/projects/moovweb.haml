@@ -5,122 +5,125 @@ title: Omar Jalalzada - Moovweb
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Moovweb" }
 
-  = partial "partials/_project_navigator", :locals => {:prev_link =>"#", :next_link=> "eats.html", :prev_state =>"disabled", :next_state=>"active" }
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"#", :next_link=> "eats.html", :prev_state =>"disabled", :next_state=>"active", :prev_msg =>" ¯\\_(ツ)_/¯", :next_msg=>"View 'Eats' Project" }
   
-  .main_brief.cat_main_container  
-    .row.max_width_center
-      .columns
+  .main_brief.main_containers
+    .row
+      .columns.large-8
         %p
           Working for Moovweb has been an experience of a lifetime. I started from a basic entry position and 34 months later I was the creative director for the company.
-        %p
+          %br
           Through this journey I gained a termendous amount of knowledge about the industry and business. Below are a sample of projects I have been involved in as designer, developer and director:
-  .main_projects.cat_main_container
+
+
+  .project_branding_guide.main_containers
     .row
-      .cat_header
-        %h5.max_width_center
-          Building the brand
-    .row.main_projects_content.max_width_center
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          .main_project_viewer_container
-            %a.main_trigger.branding_guide
-              .bg_img
-              .text Branding Guideline
-            = partial "projects/moovweb_assets/branding_guideline"
+      .columns.cat_header.color_white
+        %h5
+          Buiding the brand
+          %span.detail
+            %p 
+              As the Creative Director I wanted to create a branding guideline that would align all the creative efforts within the company. We were growing rapidly and the amount of content being generated were increasing significantly,
+              %a{:href=>"/images/assets/moovweb_branding_guideline.pdf"} this document
+              introduced consistency and efficiency for all those efforts.
+            %p.credits
+              Additional Credits: Moly Yim
+    .row
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/definition.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/categories.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/alert.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/icons.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/iconset.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/head.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/sub_head.png"}
+        / %span Splash Screen
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/branding_guideline/iphones.png"}
+        / %span Splash Screen
 
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          .main_project_viewer_container
-            %a.main_trigger.corp_site
-              .bg_img
-              .text Corporate Website
-            = partial "projects/moovweb_assets/corporate_site"
 
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          .main_project_viewer_container
-            %a.main_trigger.corp_blog
-              .bg_img
-              .text Blog
-            = partial "projects/moovweb_assets/blog"
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          .main_project_viewer_container
-            %a.main_trigger.social_media
-              .bg_img
-              .text Social Media
-            = partial "projects/moovweb_assets/social"
+  .project_website.main_containers
+    .row
+      .columns.cat_header.color_white
+        %h5
+          Corporate Website
+          %span.detail
+            %p 
+              The public facing website was one of the most challenging tasks I had to deal with. Our ever evolving messaging, product direction and agility in content created interesting challenges that had to be dealt with. 
+            %p 
+              I designed and developed the site within a month and a half that resulted in higher engagment rates, longer visits and lower bounce rate. The development stack consist of Ruby on Rails deployed on Heroku and served through the Moovweb Platform. I utilized our own platform to create a single code base for both Mobile and Desktop, which was the first ever use case for showcasing "subdomain agnostic" abilities of the product.
+            %p.credits
+              Additional Credits: Moly Yim
+    .row
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/corporate_website/homepage.png"}
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/corporate_website/pricing.png"}
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/corporate_website/additional.png"}
+      .columns.medium-12.large-6
+        %img{:src=>"/images/projects/moovweb/corporate_website/wireframes.png"}
+
     
   .special_projects.cat_main_container
     .row
-      .cat_header
-        %h5.max_width_center
-          Special Projects
-    .row.main_projects_content.max_width_center
-      .columns.small-6.medium-3.large-3
+      .cat_header.color_white
+        %h5
+          A few other Moovweb projects
+
+    .row.main_projects_content
+      .columns.small-6.medium-2.large-2
         .custom_round_containers
           .main_project_viewer_container
             %a.main_trigger.harlem_shake
               .bg_img
               .text Harlem Shake
             = partial "projects/moovweb_assets/harlem_shake"
-      .columns.small-6.medium-3.large-3
+
+      .columns.small-6.medium-2.large-2
+        .custom_round_containers
+          .main_project_viewer_container
+            %a.main_trigger.corp_blog
+              .bg_img
+              .text Blog
+            = partial "projects/moovweb_assets/blog"
+
+      .columns.small-6.medium-2.large-2
+        .custom_round_containers
+          .main_project_viewer_container
+            %a.main_trigger.social_media
+              .bg_img
+              .text Social Media
+            = partial "projects/moovweb_assets/social"
+
+      .columns.small-6.medium-2.large-2
         .custom_round_containers
           .main_project_viewer_container
             %a.main_trigger.white_paper
               .bg_img
               .text White Paper
             = partial "projects/moovweb_assets/whitepaper"
-      .columns.small-6.medium-3.large-3
-        .custom_round_containers
-          %a.main_trigger.console.idle.has-tip.tip-top{:title=>"Coming Soon", " data-tooltip " => true}
-            .bg_img
-            .text Console
-          / .main_project_viewer_container
-          /= partial "projects/moovweb_assets/social"
-      .columns.small-6.medium-3.large-3
+
+      .columns.small-6.medium-2.large-2.pull-2
         .custom_round_containers
           .main_project_viewer_container
             %a.main_trigger.promos
               .bg_img
               .text Promotions
             = partial "projects/moovweb_assets/promotions"
-    
-  / .mobile_projects.cat_main_container
-  /   .row
-  /     .cat_header
-  /       %h5.max_width_center
-  /         Mobile Projects
-  /   .row.main_projects_content.max_width_center
-  /     .columns.small-6.medium-3.large-3
-  /       .custom_round_containers
-  /         .main_project_viewer_container
-  /           %a.main_trigger
-  /             .bg_img
-  /             .text Invitrogen
-  /           = partial "projects/moovweb_assets/social"
-  /     .columns.small-6.medium-3.large-3
-  /       .custom_round_containers
-  /         .main_project_viewer_container
-  /           %a.main_trigger
-  /             .bg_img
-  /             .text Vitamin World
-  /           = partial "projects/moovweb_assets/social"
-  /     .columns.small-6.medium-3.large-3
-  /       .custom_round_containers
-  /         .main_project_viewer_container
-  /           %a.main_trigger
-  /             .bg_img
-  /             .text TicketWeb
-  /           = partial "projects/moovweb_assets/social"
-  /     .columns.small-6.medium-3.large-3
-  /       .custom_round_containers
-  /         .main_project_viewer_container
-  /           %a.main_trigger
-  /             .bg_img
-  /             .text Life Technologies
-  /           = partial "projects/moovweb_assets/social"
 
-  
   = partial "partials/project_list"
       

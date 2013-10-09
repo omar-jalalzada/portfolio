@@ -4,80 +4,78 @@ title: Omar Jalalzada - Eats, a mobile app
 
 .main_inner_container
   = partial "partials/main_header", :locals => { :main_title => "OMAR JALALZADA", :sub_title => "Eats, a mobile app", :img_url => "/images/projects/eats/cover_1.png" }
-  = partial "partials/_project_navigator", :locals => {:prev_link =>"moovweb.html", :next_link=> "true_currency.html", :prev_state =>"active", :next_state=>"active" }
+  = partial "partials/_project_navigator", :locals => {:prev_link =>"moovweb.html", :next_link=> "true_currency.html", :prev_state =>"active", :next_state=>"active", :prev_msg =>"View 'Moovweb' Project", :next_msg=>"View 'True Currency' Project" }
   .main_brief.main_containers  
     .row
-      .columns.small-12.large-12
-        .inner_width
-          %p
-            Eats is a personal project that started from the basic idea of how to keep track of your habits and spendings when it comes to food.
-          
-          %p
-            It worked its way from coffee shop conversations to doodles to sketches and then to full fidelity mock-ups. Due to an overloaded schedule and a full time job, my dream of making this a reality is still a dream.
-            If your a developer and would like to colaborate, please get in touch.
+      .columns.large-8
+        %p
+          Eats is a personal project that started from the basic idea of how to keep track of your habits and spendings when it comes to food.
+        %p
+          It worked its way from coffee shop conversations to doodles to sketches and then to full fidelity mock-ups. Due to an overloaded schedule and a full time job, my dream of making this a reality is still a dream.
+          If your a developer and would like to colaborate, please get in touch.
 
-          .designed
-            .title I designed Eats to enable users:
-            %ul
-              %li Keep track of what you eat and how much you spend on food.
-              %li Share your story and interact with friends.
-              %li Explore food in the area through friends. 
-              %li Stay motivated to eat better, healthier and cheaper.
+        .designed
+          .title I designed Eats to enable users:
+          %ul
+            %li Keep track of what you eat and how much you spend on food.
+            %li Share your story and interact with friends.
+            %li Explore food in the area through friends. 
+            %li Stay motivated to eat better, healthier and cheaper.
 
   .main_showcase.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5
           Mobile App
     .row
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/homescreen.jpg"}
-        %span Splash Screen
+        / %span Splash Screen
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/login.jpg"}
-        %span Login Screen, Facebook and Twitter enabled
+        / %span Login Screen, Facebook and Twitter enabled
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/sign_up.jpg"}
-        %span Sign Up
+        / %span Sign Up
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/feed.jpg"}
-        %span Activity Feed, Focus on the image
+        / %span Activity Feed, Focus on the image
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/navigation.jpg"}
-        %span Pull Down Nav, Gesture enabled navigation
+        / %span Pull Down Nav, Gesture enabled navigation
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/create_post.jpg"}
-        %span Upload Form
+        / %span Upload Form
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/individual_post.jpg"}
-        %span Individual Post View
+        / %span Individual Post View
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/location.jpg"}
-        %span Individual location posts
+        / %span Individual location posts
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/profile.jpg"}
-        %span User Profile
+        / %span User Profile
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/calendar_view.jpg"}
-        %span Calendar View, Financial summary for your daily, weekly and monthly consumptions
+        / %span Calendar View, Financial summary for your daily, weekly and monthly consumptions
 
   .main_additional_efforts.main_containers
     .row
-      .cat_header
+      .columns.cat_header.color_white
         %h5 Wireframes & Market Research
     .row
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/wf_flow.jpeg"}
-        %span Wireframe & Sketches
+        / %span Wireframe & Sketches
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/wf_logic.jpeg"}
-        %span Application Flow & UX Study
+        / %span Application Flow & UX Study
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/wf_layout.jpeg"}
-        %span Logical Interactions & Calendar View
+        / %span Logical Interactions & Calendar View
       .columns.medium-12.large-6
         %img{:src=>"/images/projects/eats/wf_layout.jpeg"}
-        %span Logical Interactions & Calendar View
+        / %span Logical Interactions & Calendar View
 
   = partial "partials/project_list"
         

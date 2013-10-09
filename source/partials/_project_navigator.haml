@@ -3,6 +3,8 @@
     .columns
       .inner_navigator_container
         .container
-          %a.prev{:href=>"#{prev_link}", :class=>"#{prev_state}"}
+          %a.prev.has-tip.tip-bottom{:href=>"#{prev_link}", :class=>"#{prev_state}", :title=>"#{prev_msg}", "data-tooltip " => true}
           %a.grid{:onclick=>"scroll_to_el('project_list')"}
-          %a.next{:href=>"#{next_link}", :class=>"#{next_state}"}
+          %a.next.has-tip.tip-bottom{:href=>"#{next_link}", :class=>"#{next_state}", :title=>"#{next_msg}", "data-tooltip " => true, "data-options"=>"disable-for-touch:true"}
+
+          

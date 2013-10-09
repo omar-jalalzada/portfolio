@@ -1,43 +1,72 @@
-
-.main_nav_to_work {
+#project_list {
   background-color: $primary-color;
+  padding: 20px 0 40px 0;
 
-  border-bottom: 2px solid darken($primary-color, 10%);
-  border-top: 2px solid darken($primary-color, 10%);
-  padding: 40px 0;
-  .cat_header {
-    margin-bottom: 40px;
-    h5 {
-      color: white;
+  .cat_h_container {
+    padding: 20px 0;
+    .cat_h {
+      border-bottom: 1px solid #eee;
+      display: block;
+      overflow: hidden;
+      h5 {
+        color: white;  
+      }
+    }    
+  }
+
+  .showcase {
+    .indiv_proj {
+      a {
+        height: 200px;
+        margin: 10px 0;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background-color: #ddd;     
+        background-image: image-url("sprites/project_list_sprite_v2.png");
+        @include border-radius(2px);
+        @include box-shadow(0 0 1px #000);
+        &:hover {
+          .text {
+            padding: 10px 10px 15px 10px;
+            background-color: rgba(0,0,0,0.8);
+          }
+        }
+        .text {
+          @include transition(all .1s ease-out);
+          background-color: rgba(0,0,0,0.6);
+          font-weight: 500;
+          color: white;
+          padding: 10px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+
+        }  
+      }
+      &.moovweb a{
+        // background-position-x: -400px;
+         }
+      &.eats a{
+        background-position-x: -610px;
+         }
+      &.twurrl a{
+        background-position-x: -305px;
+         }
+      &.clients a{
+        background-position: 0px -200px;
+         }
+      &.branding a{
+        background-position: -305px -200px;
+         }
+      &.fine_arts a{
+        background-position: -610px -200px;
+      }
     }
   }
-  .showcase {
-    max-width: 600px;
-    .custom_round_containers {
-      a .bg_img {
-        background-color: #ddd;
-        background-image: image-url("sprites/project_list_sprite.png");
-        background-size: 400px 200px;
-        &.idle {
-          background-position: -200px -100px;
-        }
-      }
-      .text {
-        text-shadow: 0 1px 0 darken($primary-color, 10%);
-        color: white;
-      }
-      &.moovweb a .bg_img{
-        background-position-x: -200px; }
-      &.eats a .bg_img{
-        background-position-x: -100px; }
-      &.twurrl a .bg_img{
-        background-position-x: -300px; }
-      &.branding a .bg_img{
-        background-position: 0px -100px; }
-      &.fine_arts a .bg_img{
-        background-position: -100px -100px;
-      }
-        
-    }
+
+  a {
+    display: block;
   }
 }

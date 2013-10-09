@@ -3,26 +3,43 @@ body.projects_moovweb {
 
   .main_header {
     background-image: image-url("projects/moovweb/cover.jpg");
-    height: 650px;
-    background-size: cover;
+    // background-size: cover;
     .custom_img {
-      height: 500px;
-      max-width: 600px;
-      margin: 0px auto 0;
-      background-image: image-url("projects/moovweb/cover_1.png");
+      height: 3050px;
+      max-width: 670px;
+      margin: -10px auto 0;
+      background-image: image-url("projects/moovweb/cover_1_v2.png");
       background-repeat: no-repeat;
-      background-position: 0px 0px;
     }
   }
 
-
-  .page_title {
-    h1 {
+  .main_containers {
+    padding: 40px 0;
+    &.main_brief {
+      background-color: darken($secondary-color, 5%);
+      border-bottom: 1px solid darken($secondary-color, 8%);
+      // background-color: $primary-color;
       color: white;
+
     }
-    h5 {
-     color: white;
+    &.project_branding_guide {
+      background-color: $secondary-color;
+      border-bottom: 1px solid darken($secondary-color, 3%);
+      
     }
+    &.project_website {
+      background-color: lighten($secondary-color, 5%);
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+
+  .cat_header .detail .credits {
+    font-size: 13px;
+  }
+
+
+  .special_projects {
+    background-color: lighten($secondary-color, 8%);
   }
 
   .cat_main_container {
@@ -35,13 +52,17 @@ body.projects_moovweb {
       a {
         .bg_img {
           background-size: cover;
+          @include box-shadow(0 0 0 2px darken($secondary-color, 2%), inset 0 0 0 1px rgba(250,250,250,0.2));
+          &:hover {
+            @include box-shadow(0 0 0 5px rgba($black, .7),inset 0 0 0 3px rgba(250,250,250,0.5));
+          }
         }
-        &.branding_guide .bg_img {
-          background-image: image-url("projects/moovweb/nav_brand.png");
-        }
-        &.corp_site .bg_img {
-          background-image: image-url("projects/moovweb/nav_website.png");
-        }
+        // &.branding_guide .bg_img {
+        //   background-image: image-url("projects/moovweb/nav_brand.png");
+        // }
+        // &.corp_site .bg_img {
+        //   background-image: image-url("projects/moovweb/nav_website.png");
+        // }
         &.corp_blog .bg_img {
           background-image: image-url("projects/moovweb/nav_blog.png");
         }
@@ -54,9 +75,9 @@ body.projects_moovweb {
         &.white_paper .bg_img {
           background-image: image-url("projects/moovweb/nav_whitepaper.png");
         }
-        &.console .bg_img {
-          background-image: image-url("projects/moovweb/nav_console.png");
-        }
+        // &.console .bg_img {
+        //   background-image: image-url("projects/moovweb/nav_console.png");
+        // }
         &.promos .bg_img {
           background-image: image-url("projects/moovweb/nav_promotion.png");
         }
@@ -66,16 +87,8 @@ body.projects_moovweb {
   }
 
 
-  .main_trigger .text {
-    color: inherit;
-  }
-  
-  .main_projects {
+  // .main_trigger .text {
+  //   color: inherit;
+  // }
 
-  }
-
-  .timeline {
-    height: 500px;
-    border: 1px solid red;
-  } 
 }

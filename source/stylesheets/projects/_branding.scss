@@ -7,27 +7,27 @@ body.projects_branding {
 
 
   .main_containers {
-    .columns span {
-      font-size: 14px;
-      line-height: 1.8;
-      color: lighten($secondary-color, 40%);
+    // .columns span {
+    //   font-size: 14px;
+    //   line-height: 1.8;
+    //   color: lighten($secondary-color, 40%);
       
-    }
-    .cat_header {
-      padding-top: 50px;
-      h5 {
-        font-size: 22px;
-        color: white;
-        border-bottom: 1px solid darken($secondary-color, 10%);
-        .detail {
-          display: block;
-          font-size: 14px;
-          opacity: 0.8;
-          color: lighten($secondary-color, 40%);
+    // }
+    // .cat_header {
+    //   padding-top: 50px;
+    //   h5 {
+    //     font-size: 22px;
+    //     color: white;
+    //     border-bottom: 1px solid darken($secondary-color, 10%);
+    //     .detail {
+    //       display: block;
+    //       font-size: 14px;
+    //       opacity: 0.8;
+    //       color: lighten($secondary-color, 40%);
 
-        }
-      }
-    }
+    //     }
+    //   }
+    // }
     &.main_brief {
       background-color: $secondary-color;
       color: white;
