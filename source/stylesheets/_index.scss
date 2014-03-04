@@ -6,16 +6,6 @@ body.index {
   .main_inner_container {
 
     .main_header {
-      
-      // background-image: image-url("http://farm4.staticflickr.com/3453/3771050833_e605fc7e7a_o.jpg");
-      // background-color: $primary-color;
-      // background-repeat: no-repeat;
-      // background-attachment:fixed;
-      // background-position-x: center;
-      // background-position-y: -00px;
-      // background-size: auto 130%;
-      // height: 400px;
-
 
       background-image: image-url("homepage.jpg");
       height: 550px;
@@ -74,20 +64,6 @@ body.index {
           font-size: 22px;
         }
       }
-
-      // .round_circle {
-      //   height: 305px;
-      //   width: 305px;
-      //   margin: 0px auto 20px;
-      //   background-color: #ddd;
-      //   @include border-radius(50%);
-      //   background-image: image-url("homepage_bio.jpg");
-      //   // background-size: 100%;
-      //   // background-position: -300px -120px;
-      //   // border: 1px solid #aaa;
-      //   // @include border-radius(2px);
-      //   @include box-shadow(0 0 1px #000);
-      // }
     }
 
     .main_lets_talk {

@@ -9,28 +9,31 @@
     %script{:src => "//use.typekit.net/nfq7nin.js", :type => "text/javascript"}
     :javascript
       try{Typekit.load();}catch(e){}
+    = javascript_include_tag "vendor/modernizr"
+
     %meta{:charset => "utf-8"}/
     / Set the viewport width to device width for mobile
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "Omar Jalalzada"
     / Included CSS Files
-    = stylesheet_link_tag "app"
-
-
-    / = javascript_include_tag "foundation/jquery.foundation.clearing"
-    
+    = stylesheet_link_tag "app"    
   %body{:class => page_classes}
     
     .main_grand_container
       = yield
       = partial "partials/sections/footer"
-    = javascript_include_tag "vendor/custom.modernizr"
+
     = javascript_include_tag "vendor/jquery"
+    = javascript_include_tag "vendor/fastclick"
     = javascript_include_tag "foundation.min"
     = javascript_include_tag "functions"
+
     
     :javascript
       $(document).foundation();
+    
+
+
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-17890678-2']);

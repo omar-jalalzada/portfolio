@@ -48,8 +48,9 @@ $( document ).ready(function() {
 });
 
 
-  var scroll_to_el = function(id) {
-    $('html, body').animate({
-        scrollTop: $("#"+id).offset().top
-     }, 200);
-  }
+
+var scroll_to_el = function(id) {
+  $('html, body').animate({
+      scrollTop: $("#"+id).offset().top
+   }, 200);
+}
