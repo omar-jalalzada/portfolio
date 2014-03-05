@@ -26,6 +26,14 @@ $h2-font-size: rem-calc(28);
 
 $row-width: 75em;
 
+
+// We use these to control the left/right nav styles
+// $orbit-nav-bg: none;
+$orbit-nav-bg-hover: none;
+$orbit-nav-arrow-color: #f06033;
+$orbit-nav-arrow-color-hover: #DB5024;
+
+
 //
 // FOUNDATION SETTINGS
 //
@@ -731,6 +739,7 @@ $row-width: 75em;
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
 // $orbit-nav-arrow-color: #fff;
 // $orbit-nav-arrow-color-hover: #fff;
+
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);

@@ -53,10 +53,10 @@ $( document ).ready(function() {
   $("body.projects_mcom").each(function( index ) {
 
     // move bullets above the container
-    $(function(){
-        var bullets = $('ol.orbit-bullets');
-        bullets.insertBefore($(".orbit-slides-container"));
-    });
+    // $(function(){
+    //     var bullets = $('ol.orbit-bullets');
+    //     bullets.insertBefore($(".orbit-slides-container"));
+    // });
 
     // animate when in view
     // Returns true if the specified element has been scrolled into the viewport.

@@ -139,7 +139,6 @@ $main_headline_font_size: 24px;
 
 
   .the_process_section {
-    background-color: #efefef;
     padding: 50px 0;
     .section_header {
       h1 {
@@ -150,24 +149,37 @@ $main_headline_font_size: 24px;
       }
     }
 
-    .orbit {
-      height: 200px;
-      display: block;
-      border: 1px solid blue;
-      background-color: #eee;
-      ul {
+    .orbit-container{
+      padding: 20px;
+      /*border: 1px solid blue;*/
+      /*background-color: red;*/
+      & > ul {
+        /*background-color: yellow;*/
+        height: 200px;
         li {
-
+          display: block;
+          min-height: 20px;
+          .inner_process_containers {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            /*background-color: green;*/
+            ul, li {
+              list-style-type:circle;
+            }
+          }
         }
       }
     }
+
+
+
     .orbit-bullets {
-      color: #555;
       li {
         width: 100px;
         height: 100px;
         position: relative;
-        margin: 0 40px 80px 40px;
+        margin: 40px;
         background-color: #fff;
         border: 1px solid #ddd;
         background-size: 50%; 
@@ -188,9 +200,9 @@ $main_headline_font_size: 24px;
 
         }
         &.active {
-          border: 1px solid #999;
+          border: 1px solid $ts_orange_color;
           &:after {
-            color: #555;
+            color: $ts_orange_color;
           }
         }
         &:hover {
@@ -211,6 +223,8 @@ $main_headline_font_size: 24px;
         }
       }
     }
+
+
   }
 
 
