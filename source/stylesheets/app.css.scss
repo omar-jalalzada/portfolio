@@ -1,22 +1,9 @@
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 
-// Your custom settings file to override Foundation defaults
+
 @import "compass/css3";
-
-
-// Comment out this import if you are customizing you imports below
-
-/*@import "utils/settings";*/
-/*@import "foundation/variables";*/
-/*@import "foundation/components/grid-5";*/
-
 @import "foundation/settings";
 @import "foundation/foundation";
-
-
-/*@import "foundation";*/
-
 
 
 @import "base";
@@ -30,8 +17,8 @@
 @import "projects/additional_clients";
 @import "projects/branding";
 @import "projects/fine_arts";
+@import "projects/mcom";
+
 
 @import "partials/project_list";
 @import "partials/project_navigator";
-
-@import "projects/mcom";

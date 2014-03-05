@@ -45,6 +45,54 @@ $( document ).ready(function() {
     });
   });
 
+
+
+
+
+  // Mcom Functions
+  $("body.projects_mcom").each(function( index ) {
+
+    // move bullets above the container
+    $(function(){
+        var bullets = $('ol.orbit-bullets');
+        bullets.insertBefore($(".orbit-slides-container"));
+    });
+
+    // animate when in view
+    // Returns true if the specified element has been scrolled into the viewport.
+    function isElementInViewport(elem) {
+        var $elem = $(elem);
+
+        // Get the scroll position of the page.
+        var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+        var viewportTop = $(scrollElem).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        // Get the position of the element on the page.
+        var elemTop = Math.round( $elem.offset().top );
+        var elemBottom = elemTop + $elem.height();
+
+        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+    }
+
+    // Check if it's time to start the animation.
+    function checkAnimation() {
+        var $elem = $('.animate_when_in_view');
+
+        // If the animation has already been started
+        if ($elem.hasClass('start')) return;
+
+        if (isElementInViewport($elem)) {
+            // Start the animation
+            $elem.addClass('start');
+        }
+    }
+
+    // Capture scroll events
+    $(window).scroll(function(){
+        checkAnimation();
+    });
+  });
 });
 
 
@@ -54,3 +102,5 @@ var scroll_to_el = function(id) {
       scrollTop: $("#"+id).offset().top
    }, 200);
 }
+
+

@@ -8,40 +8,68 @@ $main_headline_font_size: 24px;
     
     .top_section_desc {
       background-color: $ts_orange_color;
+      background-image: image-url("projects/mcom/cover.jpg");
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-size: cover;
+      text-shadow: 0 1px 0 darken($ts_orange_color, 5%);
       .logo_container {
         min-height: 300px;
         color: white;
         text-align: center;
         .logo {
-          width: 150px;
-          height: 170px;
-          border: 1px solid #fff;
-          margin: 150px auto 50px;
+          width: 110px;
+          height: 120px;
+          margin: 100px auto 50px;
+          background-image: image-url("projects/mcom/ts_logo.png");
+          background-repeat: no-repeat;
+          background-size: 100%; 
         }
         .main_desc {
           font-size: 28px;
+          font-weight: 100;
+          max-width: 800px;
+          margin: 0 auto;
+          line-height: 38px;
+          font-family: "adelle";
+          margin-bottom: 50px;
         }
 
         .client_section {
           display: block;
           overflow: hidden;
-          width: 300px;
+          width: 350px;
           margin: 10px auto;
           div {
-            width: 48%;
-            float: left;
-            border: 1px solid #fff;
+            width: 150px;
+            height: 50px;
+            color: transparent;
+            text-indent: -9999px;
             text-align: center;
             padding: 10px 0;
+            border-bottom: 1px solid rgba(250,250,250,0.1);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            &.mcom {
+              float: left;
+              background-image: image-url("projects/mcom/mcom.png");  
+            }
+            &.bcom {
+              float: right;
+              width: 180px;
+              background-image: image-url("projects/mcom/bcom.png");  
+            }
           }
+
         }
 
         .project_brief {
-          margin: 100px 0 50px;
+          margin: 80px 0 80px;
           .header {
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 500;
             margin-bottom: 10px;
+            font-family: "adelle";
           }
           ul li {
             list-style: none;
@@ -53,25 +81,57 @@ $main_headline_font_size: 24px;
 
 
   .attribute_section {
-    padding: 60px;
+    padding: 60px 0;
     .inner_att_containers {
       font-size: 14px;
       overflow: hidden;
       margin: 10px 0;
+      opacity: 0.2;
+      @include transition(all 1s ease-in-out);
     }
     .icon {
-      width: 60px;
+      width: 100px;
       height: 100px;
       border-right: 1px solid #eee;
       float: left;
-      margin-right: 10px;
+      margin-right: 20px;
+      padding-right: 20px;
+      background-repeat: no-repeat;
+      background-size: 60%; 
+      background-position: 35px 20px;
+      @include transition(all 1s ease-in-out);
+      &.timeline {
+        background-image: image-url("projects/mcom/spec_clock.png");  
+      }
+      &.team {
+        background-image: image-url("projects/mcom/spec_mug.png");  
+      }
+      &.tools {
+        background-image: image-url("projects/mcom/spec_briefcase.png");  
+      }
     }
     .text {
+      color: #555;
       .topic {
         font-weight: bold;
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 5px;
+        font-family: "adelle";
+      }
+      .desc {
+        span {
+          display: block;
+        }
+      }
+    }
+
+    &.start {
+      .inner_att_containers {
+        opacity: 1;
+      }
+      .icon {
+        background-position: 25px 20px;
       }
     }
   }
@@ -79,29 +139,74 @@ $main_headline_font_size: 24px;
 
 
   .the_process_section {
-    padding: 40px 0; 
-    h2 {
-      text-align: center;
+    background-color: #efefef;
+    padding: 50px 0;
+    .section_header {
+      h1 {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
-    .inner_process_containers {
-      .icon {
+
+    .orbit {
+      height: 200px;
+      display: block;
+      border: 1px solid blue;
+      background-color: #eee;
+      ul {
+        li {
+
+        }
+      }
+    }
+    .orbit-bullets {
+      color: #555;
+      li {
         width: 100px;
         height: 100px;
-        border: 1px solid #eee;
-        @include radius(50%);
-        margin: 20px 0;
-      }
-      .topic {
-        color: $ts_orange_color;
-        font-weight: bold;
-        font-size: 18px;
-        border-top: 10px;
-      }
-      .desc {
-        ul {
-          padding-right: 20px;
-          li {
-            margin-top: 10px;  
+        position: relative;
+        margin: 0 40px 80px 40px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        background-size: 50%; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: image-url("projects/mcom/process_analyze.png");  
+        cursor: pointer;
+        &:after {
+          display: block;
+          content: "2) Analyze";
+          position: absolute;
+          top: 120px;
+          left: 0;
+          width: 100px;
+          color: #999;
+          font-weight: bold;
+          font-size: 14px;
+
+        }
+        &.active {
+          border: 1px solid #999;
+          &:after {
+            color: #555;
+          }
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:first-child {
+          background-image: image-url("projects/mcom/process_correlate.png");  
+          &:after {
+            content: "1) Correlate";
+          }
+        }
+        &:last-child {
+          background-image: image-url("projects/mcom/process_prototype.png");  
+          &:after {
+            content: "3) Prototype";
           }
         }
       }
@@ -109,18 +214,34 @@ $main_headline_font_size: 24px;
   }
 
 
-
   .main_switch_container {
-    .button_container {
-      width: 300px;
-      margin: 0 auto;
+    *[data-magellan-expedition] {
+      background-color: transparent !important;
+    }
+
+    dl {
+      padding: 0;
+      dd {
+
+         a {
+          padding: 20px;
+          font-weight: bold;  
+          color: #aaa;        
+          background-color: transparent;
+        }
+        &.active {
+          a {
+            color: #333;
+          }
+        }
+      }
     }
   }
 
   .mcom_main_container {
     background-color: #000;
     min-height: 500px;
-
+    padding: 0 !important;
     .top_intro_section {
       background-color: $mcom_red;
       color: white;
@@ -145,10 +266,19 @@ $main_headline_font_size: 24px;
         font-size: $main_headline_font_size;
       }
       .supporting_image {
+
         height: 1000px;
         width: 460px;
         border: 1px solid white;
-        margin-top: -400px;
+        margin-top: -300px;
+        background-color: white;
+        opacity: 0.2;
+        @include transition(all 1s ease-in-out);
+        &.start {
+          margin-top: -400px;
+          background-color: #eee;
+          opacity: 1;
+        }
       }
     }
 
@@ -213,12 +343,10 @@ $main_headline_font_size: 24px;
 
 
   /*BCOM*/
-
-
-
   .bcom_main_container {
     background-color: #000;
     color: white;
+    padding: 0 !important;
     .top_intro_section {
       color: white;
       padding: 100px 0;
