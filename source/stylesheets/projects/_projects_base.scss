@@ -3,10 +3,10 @@ body.projects {
 
   .main_header {
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     background-position: top center;
-    background-size: auto 60%;
-    height: 400px;
+    background-size: cover;
+    height: 450px;
     overflow: hidden;
     .inner_container {
       overflow: hidden;
@@ -15,6 +15,10 @@ body.projects {
 
   p.credits {
     font-size: 14px;
+    margin-top: 50px;
+    span {
+      display: block;
+    }
   }
   p.links {
     font-size: 14px;
@@ -101,8 +105,8 @@ body.projects {
 
 @media only screen and (max-width: 560px) {
   body.projects .main_inner_container .main_header {
-    background-size: auto 34%;
-    // background-position-x: -100px; 
+    /*background-size: auto 34%;*/
+    /*// background-position-x: -100px; */
     height: 200px;
     .custom_img {
       display: none;

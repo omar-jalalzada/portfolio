@@ -156,7 +156,8 @@ body {
 }
 
 .cat_header {
-  margin: 0 auto 10px auto;
+  margin: 0 auto 30px auto;
+  padding-bottom: 20px;
   overflow: hidden;
   border-bottom: 1px solid rgba(#333, .1);
   h5 {
@@ -185,7 +186,7 @@ body {
 footer {
   background-color: darken($secondary-color, 10%);
   border-top: 2px solid darken($secondary-color, 12%);
-  padding: 30px 0 0px 0;
+  padding: 80px 0 30px 0;
   p {
     font-size: 14px;
     font-weight: 300;

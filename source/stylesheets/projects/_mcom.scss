@@ -2,10 +2,9 @@ $ts_orange_color: #f06033;
 $mcom_red: #ca0813;
 $main_headline_font_size: 24px;
 .projects_mcom {
-  font-family: helvetica;
+  
   .main_mcombcom {
 
-    
     .top_section_desc {
       background-color: $ts_orange_color;
       background-image: image-url("projects/mcom/cover.jpg");
@@ -31,15 +30,14 @@ $main_headline_font_size: 24px;
           max-width: 800px;
           margin: 0 auto;
           line-height: 38px;
-          font-family: "adelle";
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
           margin-bottom: 50px;
         }
-
         .client_section {
           display: block;
           overflow: hidden;
           width: 350px;
-          margin: 10px auto;
+          margin: 10px auto 30px;
           div {
             width: 150px;
             height: 50px;
@@ -47,7 +45,6 @@ $main_headline_font_size: 24px;
             text-indent: -9999px;
             text-align: center;
             padding: 10px 0;
-            border-bottom: 1px solid rgba(250,250,250,0.1);
             background-repeat: no-repeat;
             background-size: 100%; 
             &.mcom {
@@ -60,7 +57,6 @@ $main_headline_font_size: 24px;
               background-image: image-url("projects/mcom/bcom.png");  
             }
           }
-
         }
 
         .project_brief {
@@ -69,7 +65,7 @@ $main_headline_font_size: 24px;
             font-size: 24px;
             font-weight: 500;
             margin-bottom: 10px;
-            font-family: "adelle";
+            font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
           }
           ul li {
             list-style: none;
@@ -77,349 +73,597 @@ $main_headline_font_size: 24px;
         }
       }
     }
-  }
 
 
-  .attribute_section {
-    padding: 60px 0;
-    .inner_att_containers {
-      font-size: 14px;
-      overflow: hidden;
-      margin: 10px 0;
-      opacity: 0.2;
-      @include transition(all 1s ease-in-out);
-    }
-    .icon {
-      width: 100px;
-      height: 100px;
-      border-right: 1px solid #eee;
-      float: left;
-      margin-right: 20px;
-      padding-right: 20px;
-      background-repeat: no-repeat;
-      background-size: 60%; 
-      background-position: 35px 20px;
-      @include transition(all 1s ease-in-out);
-      &.timeline {
-        background-image: image-url("projects/mcom/spec_clock.png");  
+
+    .attribute_section {
+      padding: 60px 0;
+      .inner_att_containers {
+        font-size: 14px;
+        overflow: hidden;
+        margin: 10px 0;
+        opacity: 0.2;
+        @include transition(all 1s ease-in-out);
       }
-      &.team {
-        background-image: image-url("projects/mcom/spec_mug.png");  
+      .icon {
+        width: 100px;
+        height: 100px;
+        border-right: 1px solid #eee;
+        float: left;
+        margin-right: 20px;
+        padding-right: 20px;
+        background-repeat: no-repeat;
+        background-size: 60%; 
+        background-position: 35px 20px;
+        @include transition(all 1s ease-in-out);
+        &.timeline {
+          background-image: image-url("projects/mcom/spec_clock.png");  
+        }
+        &.team {
+          background-image: image-url("projects/mcom/spec_mug.png");  
+        }
+        &.tools {
+          background-image: image-url("projects/mcom/spec_briefcase.png");  
+        }
       }
-      &.tools {
-        background-image: image-url("projects/mcom/spec_briefcase.png");  
+      .text {
+        color: #555;
+        .topic {
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+        }
+        .desc {
+          span {
+            display: block;
+          }
+        }
       }
-    }
-    .text {
-      color: #555;
-      .topic {
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-family: "adelle";
-      }
-      .desc {
-        span {
-          display: block;
+
+      &.start {
+        .inner_att_containers {
+          opacity: 1;
+        }
+        .icon {
+          background-position: 25px 20px;
         }
       }
     }
 
-    &.start {
-      .inner_att_containers {
-        opacity: 1;
+    .the_process_section {
+      background-image: image-url("projects/mcom/process_cover_1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 80px 10px 120px;
+
+      .section_header {
+        h1 {
+          display: none;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+        }
       }
-      .icon {
-        background-position: 25px 20px;
-      }
-    }
-  }
 
-
-
-  .the_process_section {
-    padding: 50px 0;
-    .section_header {
-      h1 {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
-
-    .orbit-container{
-      padding: 20px;
-      /*border: 1px solid blue;*/
-      /*background-color: red;*/
-      & > ul {
-        /*background-color: yellow;*/
-        height: 200px;
+      .orbit-bullets {
+        height: 120px;
+        margin: 0 0 20px 0;
+        padding: 15px;
         li {
-          display: block;
-          min-height: 20px;
-          .inner_process_containers {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            /*background-color: green;*/
-            ul, li {
-              list-style-type:circle;
+          width: 80px;
+          height: 80px;
+          margin: 0 20px;
+          border: 1px solid transparent;
+          background-color: transparent;
+          background-size: 50%; 
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: image-url("projects/mcom/process_analyze.png");  
+          cursor: pointer;
+          padding: 2px;
+          @include transition(all 0.2s ease-out);
+          &.active {
+            border: 1px solid $ts_orange_color;
+            opacity: 1;
+            background-color: rgba(250,250,250,0.5);
+            @include scale(1.3);
+          }
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &:first-child {
+            background-image: image-url("projects/mcom/process_correlate.png");  
+          }
+          &:last-child {
+            background-image: image-url("projects/mcom/process_prototype.png");  
+          }
+        }
+      }
+
+
+      .orbit-container{
+        margin: 50px 0;
+
+        & > ul {
+          height: 200px;
+          & > li {
+            &.first_slide {
+              /*background-color: blue;*/
+            }
+            display: block;
+            min-height: 20px;
+            .inner_process_containers {
+              margin: 0 auto;
+              padding: 20px;
+              h3 {
+                font-weight: bold;
+                color: $ts_orange_color;
+                text-align: center;
+                margin: 0 0 70px 0;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+              }
+              ul {
+                overflow: hidden;
+                color: #fff;
+                li {
+                  list-style: none;
+                  padding: 0 40px;
+                  margin: 30px 0;
+                  .icon {
+                    width: 160px;
+                    height: 160px;
+                    display: block;
+                    margin: 0px auto 20px auto;
+                    background-size: 319%; 
+                    background-repeat: no-repeat;
+                    background-image: image-url("projects/mcom/process_steps_sprite.png");
+                    opacity: 0.2;
+                    @include transition(all 1s ease-out .1s);
+                    
+                  }
+                  .text {
+                    display: block;
+                    text-align: center;  
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: rgba(250,250,250,0.6);
+                    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+                    b {
+                      color: #fff;
+                    }
+                  }
+                }
+                &.humanize {
+                  li .icon.human {
+                    background-position: -10px -15px;
+                  }
+                  li .icon.context {
+                    background-position: -175px -15px;
+                  }
+                  li .icon.focus {
+                    background-position: -345px -15px;
+                  }
+                }
+                &.research {
+                  li .icon.interview {
+                    background-position: -10px -180px;
+                  }
+                  li .icon.analyze {
+                    background-position: -172px -180px;
+                  }
+                  li .icon.persona {
+                    background-position: -345px -180px;
+                  }
+                }
+                &.design {
+                  li .icon.define {
+                    background-position: -10px -355px;
+                  }
+                  li .icon.wireframe {
+                    background-position: -172px -355px;
+                  }
+                  li .icon.prototype {
+                    background-position: -345px -355px;
+                  }
+                }
+
+              }
+            }
+
+            &.active {
+              .inner_process_containers {
+                ul {
+                  li {
+                    .icon {
+                      opacity: 1;
+                      background-position-y: 0px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+
+    // floating mcom bcom switch
+
+
+    .main_switch_container {
+      margin-top: -65px;
+      *[data-magellan-expedition] {
+        background-color: transparent !important;
+      }
+
+      dl {
+        padding: 0;
+        margin: 0;
+        dd {
+          a {
+            background-repeat: no-repeat;
+            background-size: 100%;             
+            background-color: transparent;
+            background-position: center;
+            text-indent: -9999px;
+            opacity: 0.3;
+          }
+          &.mcom {
+            background-color: $mcom_red;
+            width: 140px;
+            padding: 0 20px;
+            a {
+             background-image: image-url("projects/mcom/mcom.png");  
+            }
+          }
+          &.bcom {
+            background-color: #000;
+            width: 200px;
+            padding: 0 20px;
+            a {
+             background-image: image-url("projects/mcom/bcom.png");  
+            }
+          }
+          &.active {
+            a {
+              opacity: 1;
             }
           }
         }
       }
     }
 
-
-
-    .orbit-bullets {
-      li {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        margin: 40px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        background-size: 50%; 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: image-url("projects/mcom/process_analyze.png");  
-        cursor: pointer;
-        &:after {
-          display: block;
-          content: "2) Analyze";
-          position: absolute;
-          top: 120px;
-          left: 0;
-          width: 100px;
-          color: #999;
-          font-weight: bold;
-          font-size: 14px;
-
-        }
-        &.active {
-          border: 1px solid $ts_orange_color;
-          &:after {
-            color: $ts_orange_color;
-          }
-        }
-        &:hover {
-          opacity: 0.8;
-        }
-
-        &:first-child {
-          background-image: image-url("projects/mcom/process_correlate.png");  
-          &:after {
-            content: "1) Correlate";
-          }
-        }
-        &:last-child {
-          background-image: image-url("projects/mcom/process_prototype.png");  
-          &:after {
-            content: "3) Prototype";
-          }
-        }
-      }
+    .tabs-content {
+      margin: 0 !important;
     }
 
-
-  }
-
-
-  .main_switch_container {
-    *[data-magellan-expedition] {
-      background-color: transparent !important;
-    }
-
-    dl {
-      padding: 0;
-      dd {
-
-         a {
-          padding: 20px;
-          font-weight: bold;  
-          color: #aaa;        
-          background-color: transparent;
-        }
-        &.active {
-          a {
-            color: #333;
-          }
-        }
-      }
-    }
-  }
-
-  .mcom_main_container {
-    background-color: #000;
-    min-height: 500px;
-    padding: 0 !important;
-    .top_intro_section {
-      background-color: $mcom_red;
-      color: white;
-      padding: 100px 0;
-      .logo {
-        width: 250px;
-        height: 100px;
-        border: 1px solid white;
-        margin-top: 60px;
-        margin-bottom: 50px;
-      }
-      .desc {
-        font-size: $main_headline_font_size;
-      }
-    }
-
-    .homepage_intro_section {
-      color: white;
-      padding: 100px 0;
-      .main_paragraph {
-        margin-top: 100px;
-        font-size: $main_headline_font_size;
-      }
-      .supporting_image {
-
-        height: 1000px;
-        width: 460px;
-        border: 1px solid white;
-        margin-top: -300px;
-        background-color: white;
-        opacity: 0.2;
-        @include transition(all 1s ease-in-out);
-        &.start {
-          margin-top: -400px;
-          background-color: #eee;
-          opacity: 1;
-        }
-      }
-    }
-
-    .features_section {
-      padding: 100px 0;
-      color: white;
-      .inner_container {
-        .img {
-          width: 200px;
-          height: 200px;
-          margin: auto;
-          @include radius(50%);
-          background-color: #eee;
-          margin-bottom: 50px;
-        }
-        p {
-          text-align: center;
-        }
-      }
-    }
-
-    .pdp_section {
-      padding: 100px 0;
-      background-color: #222;
-      
-      .main_paragraph {
+    .mcom_main_container {
+      background-color: #1a1a1a;
+      min-height: 500px;
+      padding: 0 !important;
+      .top_intro_section {
+        background-color: $mcom_red;
         color: white;
-        text-align: center;
-        margin: 50px 0 100px 0;
-        font-size: $main_headline_font_size;
+        height: 600px;
+
+        background-image: image-url("projects/mcom/mcom_cover.png");
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+
+        .logo {
+          width: 250px;
+          height: 100px;
+          margin-top: 180px;
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-image: image-url("projects/mcom/mcom.png");
+        }
+        .desc {
+          font-size: 30px;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          max-width: 500px;
+          margin-top: 100px;
+        }
       }
 
-      .feature {
-        max-width: 240px;
-        margin: 0 auto;
-        .icon {
-          width: 200px;
-          height: 200px;
-          margin: 0 auto;
-          @include radius(50%);
-          background-color: #eee;
-          margin-bottom: 50px;
+      .homepage_intro_section {
+        color: white;
+        padding: 100px 0;
+        .main_paragraph {
+          margin-top: 60px;
+          max-width: 580px;
+          overflow: hidden;
+          color: #aaa;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          .icon {
+            height: 115px;
+            width: 90px;
+            border-right: 2px solid rgba(250,250,250,0.1);
+            margin-right: 20px;
+            float: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: image-url("projects/mcom/home_icon.png");
+          }
+          p {
+            display: block;
+            padding: 30px 0;
+          }
         }
-        p {
+        .feature_lists {
+          color: #aaa;
+          padding-left: 100px;
+          max-width: 580px;
+        }
+        .supporting_image {
+          height: 1000px;
+          width: 400px;
+          margin-top: -450px;
+          margin-right: -50px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: image-url("projects/mcom/mcom_main_iphone.png");
+          @include transition(all 2s ease-in-out);
+          opacity: 0;
+          &.start {
+            margin-top: -550px;
+            margin-right: 0px;
+            opacity: 1;
+          }
+        }
+      }
+
+      .features_section {
+        padding: 100px 0;
+        color: white;
+        .inner_container {
+          .img {
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            margin-top: 50px;
+            opacity: 0.5;
+            @include transition(all 1s ease-in-out);
+            @include radius(50%);
+            margin-bottom: 50px;
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            &.feature_1 {
+              background-image: image-url("projects/mcom/mcom_feature_1.png");  
+            }
+            &.feature_2 {
+              background-image: image-url("projects/mcom/mcom_feature_2.png");  
+            }
+            &.feature_3 {
+              background-image: image-url("projects/mcom/mcom_feature_3.png");  
+            }
+            
+          }
+          p {
+            text-align: center;
+            font-size: 18px;
+            max-width: 300px;
+            margin: 0 auto;
+          }
+
+          &.start {
+            .img {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+
+      .pdp_section {
+        padding: 100px 0 0 0;
+
+        background-image: image-url("projects/mcom/mcom_pdp_cover.jpg");
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        
+        .main_paragraph {
           color: white;
           text-align: center;
+          margin: 50px 0 100px 0;
+          font-size: $main_headline_font_size;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          @include scale(.9);
+          @include transition(all 1s ease-in-out);
+          &.start {
+            @include scale(1);
+          }
+        }
+
+        .feature {
+          max-width: 240px;
+          margin: 50px auto 0;
+          .icon {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            @include radius(50%);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            &.pdp_feature_1 {
+              background-image: image-url("projects/mcom/mcom_pdp_feature_1.png");
+            }
+            &.pdp_feature_2 {
+              background-image: image-url("projects/mcom/mcom_pdp_feature_2.png");
+            }
+            &.pdp_feature_3 {
+              background-image: image-url("projects/mcom/mcom_pdp_feature_3.png");
+            }
+            &.pdp_feature_4 {
+              background-image: image-url("projects/mcom/mcom_pdp_feature_4.png");
+            }
+          }
+          p {
+            color: white;
+            text-align: center;
+            max-width: 250px;
+            margin-top: 10px;
+          }
+        }
+        .phone {
+          width: 350px;
+          height: 730px;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-image: image-url("projects/mcom/mcom_pdp_main_phone.png");
         }
       }
-      .phone {
-        width: 420px;
-        height: 900px;
-        border: 1px solid white;
-        margin: 0 auto;
+
+      .image_grid_holder {
+        height: 1115px;
+        margin-top: 200px;
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        background-image: image-url("projects/mcom/mcom_bottom_cover.png");
       }
     }
 
-    .image_grid_holder {
-      height: 1200px;
-    }
-  }
 
 
-
-  /*BCOM*/
-  .bcom_main_container {
-    background-color: #000;
-    color: white;
-    padding: 0 !important;
-    .top_intro_section {
+    /*BCOM*/
+    .bcom_main_container {
+      background-color: #000;
       color: white;
-      padding: 100px 0;
-      .logo {
-        width: 250px;
-        height: 100px;
-        border: 1px solid white;
-        margin-top: 60px;
-        margin-bottom: 50px;
-      }
-      .desc {
-        font-size: $main_headline_font_size;
-        margin-bottom: 100px;
-      }
-      .image {
-        width: 100%;
-        height: 500px;
-        border: 1px solid white;
-      }
-    }
+      padding: 0 !important;
+      .top_intro_section {
+        .logo {
+          width: 350px;
+          height: 100px;
+          margin-top: 180px;
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-image: image-url("projects/mcom/bcom.png");
+        }
+        .desc {
+          font-size: 30px;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          max-width: 500px;
+          margin-top: 100px;
+        }
+/*        color: white;
+        padding: 100px 0;
+        .logo {
+          width: 250px;
+          height: 100px;
+          border: 1px solid white;
+          margin-top: 60px;
+          margin-bottom: 50px;
+        }
+        .desc {
+          font-size: $main_headline_font_size;
+          margin-bottom: 100px;
+        }*/
 
-    .homepage_intro_section {
-      color: white;
-      padding: 100px 0;
-      .main_paragraph {
-        margin-top: 100px;
-        font-size: $main_headline_font_size;
       }
-      .supporting_image {
-        height: 1000px;
-        width: 460px;
-        border: 1px solid white;
-        margin-top: -400px;
-      }
-    }
 
-    .lookbook_section {
-      .main_paragraph {
+      .homepage_intro_section {
         color: white;
-        text-align: center;
-        margin: 50px 0 100px 0;
-        font-size: $main_headline_font_size;
+        padding: 0px 0 50px 0;
+        margin-top: 200px;
+        border: 1px solid transparent;
+        height: 1200px;
+        background-image: image-url("projects/mcom/bcom_main_cover.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        & > .image {
+          border: 1px solid transparent;
+          margin-top: -350px;
+          width: 98%;
+          height: 900px;
+          max-width: 1300px;
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          background-image: image-url("projects/mcom/bcom_main_iphone.png");
+          
+        }
+
+
+        .main_paragraph {
+          margin-top: 60px;
+          max-width: 580px;
+          overflow: hidden;
+          color: #aaa;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          .icon {
+            height: 165px;
+            width: 90px;
+            border-right: 2px solid rgba(250,250,250,0.1);
+            margin-right: 20px;
+            float: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: image-url("projects/mcom/home_icon.png");
+          }
+          p {
+            display: block;
+            padding: 10px 0;
+          }
+        }
+
+        .feature_lists {
+          color: #aaa;
+          padding-left: 100px;
+          max-width: 580px;
+        }
+
+        .supporting_image {
+          height: 1000px;
+          width: 460px;
+          border: 1px solid white;
+          margin-top: -400px;
+        }
       }
+
+      .lookbook_section {
+        
+        .main_paragraph {
+          color: white;
+          text-align: center;
+          margin: 50px 0 100px 0;
+          font-size: $main_headline_font_size;
+          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          @include scale(.9);
+          @include transition(all 1s ease-in-out);
+          &.start {
+            @include scale(1);
+          }
+        }
+
+      }
+
+      .lookbook_images {
+        /*padding: 150px 0;*/
+        .iphone_images {
+          height: 1000px;
+          margin: 0 auto;
+          max-width: 1200px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: image-url("projects/mcom/bcom_lookbook.jpg");
+        }
+
+      }
+
     }
 
-    .lookbook_images {
-      padding: 150px 0;
-      .iphone_images {
-        border: 1px solid white;
-        width: 800px;
-        height: 1000px;
-        margin: 0 auto;
-      }
 
-    }
+
 
   }
-
-
-
-
 }

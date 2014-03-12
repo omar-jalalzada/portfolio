@@ -3,7 +3,7 @@ body.projects_moovweb {
   .main_header {
     background-image: image-url("projects/moovweb/cover.jpg");
     .custom_img {
-      height: 3050px;
+      height: 300px;
       max-width: 670px;
       margin: -10px auto 0;
       background-image: image-url("projects/moovweb/cover_1_v2.png");
@@ -12,19 +12,15 @@ body.projects_moovweb {
   }
 
   .main_containers {
-    padding: 90px 0 50px 0;
+    padding: 140px 0 50px 0;
     &.main_brief {
       background-color: darken($secondary-color, 5%);
       border-bottom: 1px solid darken($secondary-color, 8%);
-      // background-color: $primary-color;
       color: white;
-
     }
     &.project_branding_guide {
-
       background-color: $secondary-color;
       border-bottom: 1px solid darken($secondary-color, 3%);
-      
     }
     &.project_website {
       background-color: lighten($secondary-color, 5%);

@@ -8,7 +8,7 @@ title: Macys and Bloomingdales
       .columns.logo_container
         .logo
         .main_desc
-          Re-inventing a mobile experience for two hertiage American brands that needs to modernize their mobile strategies
+          Re-inventing a mobile experience for two heritage American brands that needs to modernize their mobile strategies
         
         .client_section
           .mcom macys
@@ -19,7 +19,7 @@ title: Macys and Bloomingdales
             Brief details and Project Conditions
           %ul
             %li 1) Provide both actionable (short term) and strategic (long term) solutions
-            %li 2) Adhere to the technical infrastructure of existting legacy systems
+            %li 2) Adhere to the technical infrastructure of existing legacy systems
             %li 3) Each brand’s experience needs to be contextual
 
   .attribute_section.animate_when_in_view
@@ -60,45 +60,93 @@ title: Macys and Bloomingdales
 
 
 
-    .row
-      .columns
-        %ul{"data-orbit" => "", "data-options" => "slide_number: false; timer: true; timer_speed:5000; pause_on_hover:true;"}
-          %li{"data-orbit-slide"=>"process-1"}
-            %img
-            .inner_process_containers
-              %h2 1) Correlate
-              %ul
-                %li Brain-dump of mobile and real-world retail experiences 
-                %li Re-framed and humanized the problems - "what are people really wanting here?"
-                %li Identified 3 interesting 'pain points' to explore - content digestion, path to store, content relevancy
-          %li{"data-orbit-slide"=>"process-2"}
-            .inner_process_containers
-              %h2 2) Analyze
-              %ul 
-                %li Wrote the specific unbiased questions and conducted in-person interviews
-                %li Distilled and analyzed key themes
-                %li Created a goal-oriented user-persona and user-story workflow
-                store, content relevancy
-          %li{"data-orbit-slide"=>"process-3"}
-            .inner_process_containers
-              %h3 3) Prototype
-              %ul 
-                %li Assigned screens views per the user-story
-                %li Drafted lo-fi wireframes and UI elements
-                %li Built interactive app prototype store, content relevancy
+
+    %ul{"data-orbit" => "", "data-options" => "slide_number: false; timer: true; timer_speed:5000; pause_on_hover:true;"}
+      %li.first_slide{"data-orbit-slide"=>"process-1"}      
+        %img
+        .inner_process_containers
+          %h3 1) Understand & Relate
+          %ul.humanize
+            %li.columns.medium-4.large-4 
+              %img
+              %span.icon.human
+              %span.text
+                Humanizing our efforts by 
+                %b re-framing the problems 
+                and asking - "What do people really want?"
+            %li.columns.medium-4.large-4 
+              %span.icon.context
+              %span.text
+                %b Understanding the context 
+                by doing a brain-dump of m-commerce and real-world retail experiences
+            %li.columns.medium-4.large-4
+              %span.icon.focus
+              %span.text
+                Honing our focus by 
+                %b identifying 'pain points' 
+                to explore - content digestion, path to store, content relevancy
+      %li{"data-orbit-slide"=>"process-2"}
+        .inner_process_containers
+          %h3 2) Research & Analyze
+          %ul.research
+            %li.columns.medium-4.large-4
+              %span.icon.interview
+              %span.text
+                Conducted 
+                %b in-person interviews 
+                with subject matter experts and users
+            %li.columns.medium-4.large-4
+              %span.icon.analyze
+              %span.text
+                Distilled and analyzed key 
+                %b themes and patterns 
+                to drive functionality
+            %li.columns.medium-4.large-4
+              %span.icon.persona
+              %span.text
+                Created 
+                %b user-personas 
+                and 
+                %b user-story 
+                work flows
+      %li{"data-orbit-slide"=>"process-3"}
+        .inner_process_containers
+          %h3 3) Design, Prototype & Iterate 
+          %ul.design
+            %li.columns.medium-4.large-4
+              %span.icon.define
+              %span.text
+                Defined a clear 
+                %b path to product 
+                based on the user-story
+            %li.columns.medium-4.large-4
+              %span.icon.wireframe
+              %span.text
+                Iterated through  
+                %b lo-fi wireframes 
+                for each individual user story
+            %li.columns.medium-4.large-4
+              %span.icon.prototype
+              %span.text
+                Built an 
+                %b interactive app prototype
+                to test functionalities on the device
 
 
-
+  // Fix Header + Tab
   .main_switch_container  
     .row
-      .columns.medium-6.large-6
+      .columns
         %dl.tabs{"data-tab" => "", "data-magellan-expedition" => "fixed"}
-          %dd.active
+          %dd.mcom.active
             %a{href: "#panel2-1"} Macys
-          %dd
+          %dd.bcom
             %a{href: "#panel2-2"} Bloomindales
-  
+
+
+  // Tab Content
   .tabs-content
+    // MCOM
     .mcom_main_container#panel2-1.content.active
       .top_intro_section
         .row
@@ -109,60 +157,63 @@ title: Macys and Bloomingdales
       
       .homepage_intro_section
         .row
-          .columns.medium-6.large-6
+          .columns.medium-7.large-7
             .main_paragraph
               .icon
-              %p A clutter free Homescreen with a clear eye path and a digestible overview
+              %p A clutter free Home-screen with a clear eye path and a digestible overview
 
             .feature_lists
               %ul
-                %li Fullscreen advertising to allow a thematic experience
+                %li Full-screen advertising to allow a thematic experience
                 %li One tap access to Search, Scan, Shop and other prioritized CTAs
                 %li Personalized content based on the users bio and shopping preferences
-          .columns.medium-6.large-6
+          .columns.medium-5.large-5
             .supporting_image.animate_when_in_view
 
       .features_section
         .row
           .columns.medium-4.large-4
-            .inner_container
-              .img
+            .inner_container.animate_when_in_view
+              .img.feature_1
               %p A flat heirarchy in the bottom bar that provides an intuitive navigation.
           .columns.medium-4.large-4
-            .inner_container
-              .img
+            .inner_container.animate_when_in_view
+              .img.feature_2
               %p Breaks content into bite-size pieces to prevent disorientation 
           .columns.medium-4.large-4
-            .inner_container
-              .img
-              %p Contextually aware content that adapts for a richer in-store experience
+            .inner_container.animate_when_in_view
+              .img.feature_3
+              %p Contextually aware content for a richer in-store experience
 
       .pdp_section
         .row
           .columns.medium-6.large-6.large-centered.medium.centered.small-centered 
-            %p.main_paragraph
+            %p.main_paragraph.animate_when_in_view
               Neatly organized  Product Display Page with a focus on imagery and functional personalization
         .row
           .columns.medium-4.large-4
             .feature
-              .icon
+              .icon.pdp_feature_1
               %p Intuitively change product attribute on the same page
             .feature
-              .icon
-              %p Suggesting products and tindicating in-store availablitiy
+              .icon.pdp_feature_2
+              %p Suggesting products and indicating in-store availability
 
           .columns.medium-4.large-4
             .phone
           .columns.medium-4.large-4
             .feature
-              .icon
-              %p Full screen image and video gallery
-            .feature
-              .icon
+              .icon.pdp_feature_3
               %p Quick summary on the accordion level
+            .feature
+              .icon.pdp_feature_4
+              %p Full-screen images and video gallery
         .row
           .image_grid_holder
             .img
+
+
+    // BCOM
 
     .bcom_main_container#panel2-2.content
       .top_intro_section
@@ -171,26 +222,26 @@ title: Macys and Bloomingdales
             .logo
             .desc
               Deliver a  sophisticated and intimate shopping experience for fashion forward consumers 
-        .row
-          .image
+
 
       .homepage_intro_section
+        .image
         .row
-          .columns.medium-6.large-6
+          .columns.medium-9.large-7.large-push-5
             .main_paragraph
               .icon
-              %p The Homescreen introduces lookbooks, a more editorial approach to m-commerce. Highly personalized content keeps the user coming back to the app. 
+              %p The Home-screen introduces lookbooks, a more editorial approach to m-commerce. Highly personalized content keeps the user coming back to the app. 
 
             .feature_lists
               %ul
                 %li Search/scan is minimized in an editorial and lookbook experience
-                %li Each content block is a link to a campaign, lookbook, pdp or editorial content item
+                %li Each content block is a link to a campaign, lookbook, PDP or editorial content item
                 %li Use of large full screen visuals with color, depth, clarity, and visual detail
 
       .lookbook_section
         .row
           .columns.medium-6.large-6.large-centered.medium.centered.small-centered 
-            %p.main_paragraph
+            %p.main_paragraph.animate_when_in_view
               Each lookbook contains an easy to browse outfit layout for the user to pick from
       
       .lookbook_images  

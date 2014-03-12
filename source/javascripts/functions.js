@@ -29,16 +29,15 @@ $( document ).ready(function() {
           $(this).remove();
           $("html, body").animate({ scrollTop: t_pos_r - 50 }, 200);
       });
+      
       // Find the thumbnails and add them inside the wrapper
       $(this).siblings('.main_img').children("img").each(function(){
         var current_value = $(this).attr("data_src")
         $("#main_project_viewer_hover .main_img_container").append("<img src='"+current_value+"'>")
       })
 
-      
       // Move the content as well
       $(this).siblings('.content').each(function(){
-        // $("#main_slideshow_hover .main_content").append($(this));
         $(this).clone().appendTo("#main_project_viewer_hover .main_content");
       })
 
@@ -53,10 +52,10 @@ $( document ).ready(function() {
   $("body.projects_mcom").each(function( index ) {
 
     // move bullets above the container
-    // $(function(){
-    //     var bullets = $('ol.orbit-bullets');
-    //     bullets.insertBefore($(".orbit-slides-container"));
-    // });
+    $(function(){
+        var bullets = $('ol.orbit-bullets');
+        bullets.insertBefore($(".orbit-slides-container"));
+    });
 
     // animate when in view
     // Returns true if the specified element has been scrolled into the viewport.
@@ -77,15 +76,18 @@ $( document ).ready(function() {
 
     // Check if it's time to start the animation.
     function checkAnimation() {
-        var $elem = $('.animate_when_in_view');
+        var $elems = $('.animate_when_in_view:not(.start)');
 
         // If the animation has already been started
-        if ($elem.hasClass('start')) return;
+        // if ($elem.hasClass('start')) return;
 
-        if (isElementInViewport($elem)) {
-            // Start the animation
-            $elem.addClass('start');
-        }
+        $elems.each(function(){
+          var $elem = $(this);
+          if (isElementInViewport($elem)) {
+              // Start the animation
+              $elem.addClass('start');
+          }          
+        });
     }
 
     // Capture scroll events
