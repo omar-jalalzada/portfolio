@@ -1,6 +1,9 @@
 $ts_orange_color: #f06033;
 $mcom_red: #ca0813;
 $main_headline_font_size: 24px;
+
+/*body {width: 320px; border: 1px solid gold; margin: auto}*/
+
 .projects_mcom {
   
   .main_mcombcom {
@@ -12,10 +15,11 @@ $main_headline_font_size: 24px;
       background-attachment:fixed;
       background-size: cover;
       text-shadow: 0 1px 0 darken($ts_orange_color, 5%);
+      color: white;
+      text-align: center;
+      
       .logo_container {
         min-height: 300px;
-        color: white;
-        text-align: center;
         .logo {
           width: 110px;
           height: 120px;
@@ -25,63 +29,63 @@ $main_headline_font_size: 24px;
           background-size: 100%; 
         }
         .main_desc {
-          font-size: 28px;
-          font-weight: 100;
+          margin-bottom: 50px;  
           max-width: 800px;
           margin: 0 auto;
-          line-height: 38px;
-          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
-          margin-bottom: 50px;
-        }
-        .client_section {
+          h2 {
+          color: white;
           display: block;
-          overflow: hidden;
-          width: 350px;
-          margin: 10px auto 30px;
-          div {
-            width: 150px;
-            height: 50px;
-            color: transparent;
-            text-indent: -9999px;
-            text-align: center;
-            padding: 10px 0;
-            background-repeat: no-repeat;
-            background-size: 100%; 
-            &.mcom {
-              float: left;
-              background-image: image-url("projects/mcom/mcom.png");  
-            }
-            &.bcom {
-              float: right;
-              width: 180px;
-              background-image: image-url("projects/mcom/bcom.png");  
-            }
-          }
-        }
-
-        .project_brief {
-          margin: 80px 0 80px;
-          .header {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
-          }
-          ul li {
-            list-style: none;
           }
         }
       }
+
+      .client_section {
+        display: block;
+        overflow: hidden;
+        max-width: 350px;
+        margin: 40px auto 0;
+        .logos {
+          width: 100%;
+          height: 50px;
+          color: transparent;
+          text-indent: -9999px;
+          text-align: center;
+          padding: 10px 0;
+          background-repeat: no-repeat;
+          background-size: 100%; 
+          &.mcom {
+            float: left;
+            background-image: image-url("projects/mcom/mcom.png");  
+          }
+          &.bcom {
+            float: right;
+            background-image: image-url("projects/mcom/bcom.png");  
+          }
+        }
+      }
+
+      .project_brief {
+        margin: 40px 0;
+        h4 {
+          color: white;
+          font-weight: 500;
+        }
+
+        ul li {
+          list-style: none;
+        }
+      }
+
     }
 
 
 
     .attribute_section {
-      padding: 60px 0;
+      padding: 40px 0;
       .inner_att_containers {
         font-size: 14px;
         overflow: hidden;
-        margin: 10px 0;
+        margin: 20px 0;
         opacity: 0.2;
         @include transition(all 1s ease-in-out);
       }
@@ -136,7 +140,7 @@ $main_headline_font_size: 24px;
       background-image: image-url("projects/mcom/process_cover_1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      padding: 80px 10px 120px;
+      padding: 0px 10px 120px;
 
       .section_header {
         h1 {
@@ -148,12 +152,12 @@ $main_headline_font_size: 24px;
       }
 
       .orbit-bullets {
-        height: 120px;
-        margin: 0 0 20px 0;
-        padding: 15px;
+        height: 110px;
+        margin: 30px 0 20px 0;
+        padding: 15px 0;
         li {
-          width: 80px;
-          height: 80px;
+          width: 70px;
+          height: 70px;
           margin: 0 20px;
           border: 1px solid transparent;
           background-color: transparent;
@@ -210,7 +214,7 @@ $main_headline_font_size: 24px;
                 color: #fff;
                 li {
                   list-style: none;
-                  padding: 0 40px;
+                  padding: 0 10px;
                   margin: 30px 0;
                   .icon {
                     width: 160px;
@@ -222,7 +226,6 @@ $main_headline_font_size: 24px;
                     background-image: image-url("projects/mcom/process_steps_sprite.png");
                     opacity: 0.2;
                     @include transition(all 1s ease-out .1s);
-                    
                   }
                   .text {
                     display: block;
@@ -231,6 +234,8 @@ $main_headline_font_size: 24px;
                     line-height: 1.4;
                     color: rgba(250,250,250,0.6);
                     text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+                    max-width: 350px;
+                    margin: 0 auto;
                     b {
                       color: #fff;
                     }

@@ -51,11 +51,25 @@ $( document ).ready(function() {
   // Mcom Functions
   $("body.projects_mcom").each(function( index ) {
 
+
     // move bullets above the container
     $(function(){
         var bullets = $('ol.orbit-bullets');
         bullets.insertBefore($(".orbit-slides-container"));
     });
+
+
+    // scroll toggle buttons back to the top
+    $(".main_switch_container .clickker").each(function(){
+      $(this).click(function(){
+        // console.log($(this).text());
+        $('html,body').animate({
+        scrollTop: $("#scroll_to_div_placeholder").offset().top},
+        '100');
+      });
+    });
+
+
 
     // animate when in view
     // Returns true if the specified element has been scrolled into the viewport.
@@ -73,7 +87,6 @@ $( document ).ready(function() {
 
         return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
     }
-
     // Check if it's time to start the animation.
     function checkAnimation() {
         var $elems = $('.animate_when_in_view:not(.start)');
@@ -89,11 +102,11 @@ $( document ).ready(function() {
           }          
         });
     }
-
     // Capture scroll events
     $(window).scroll(function(){
         checkAnimation();
     });
+
   });
 });
 

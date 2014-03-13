@@ -3,20 +3,24 @@ title: Macys and Bloomingdales
 ---
 
 .main_mcombcom
+  
   .top_section_desc
     .row
       .columns.logo_container
         .logo
         .main_desc
-          Re-inventing a mobile experience for two heritage American brands that needs to modernize their mobile strategies
-        
-        .client_section
-          .mcom macys
-          .bcom bloomingdale
-
+          %h2 Re-inventing a mobile experience for two heritage American brands that needs to modernize their mobile strategies
+    .row.client_section
+      .columns.large-5.medium-5.small-5
+        .logos.mcom macys
+      .columns.large-7.medium-7.small-7
+        .logos.bcom bloomingdale
+    
+    .row
+      .columns.large-12
         .project_brief
           .header
-            Brief details and Project Conditions
+            %h4 Brief details and Project Conditions
           %ul
             %li 1) Provide both actionable (short term) and strategic (long term) solutions
             %li 2) Adhere to the technical infrastructure of existing legacy systems
@@ -134,13 +138,13 @@ title: Macys and Bloomingdales
 
 
   // Fix Header + Tab
-  .main_switch_container  
+  .main_switch_container
     .row
       .columns
         %dl.tabs{"data-tab" => "", "data-magellan-expedition" => "fixed"}
-          %dd.mcom.active
+          %dd.mcom.active.clickker
             %a{href: "#panel2-1"} Macys
-          %dd.bcom
+          %dd.bcom.clickker
             %a{href: "#panel2-2"} Bloomindales
 
 
@@ -148,6 +152,7 @@ title: Macys and Bloomingdales
   .tabs-content
     // MCOM
     .mcom_main_container#panel2-1.content.active
+      #scroll_to_div_placeholder
       .top_intro_section
         .row
           .columns.medium-6.large-6
