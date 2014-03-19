@@ -30,7 +30,7 @@ $main_headline_font_size: 24px;
         }
         .main_desc {
           margin-bottom: 50px;  
-          max-width: 800px;
+          max-width: 600px;
           margin: 0 auto;
           h2 {
           color: white;
@@ -356,12 +356,10 @@ $main_headline_font_size: 24px;
         background-color: $mcom_red;
         color: white;
         height: 600px;
-
         background-image: image-url("projects/mcom/mcom_cover.png");
         background-repeat: no-repeat;
         background-attachment:fixed;
         background-size: cover;
-
         .logo {
           width: 250px;
           height: 100px;
@@ -371,10 +369,11 @@ $main_headline_font_size: 24px;
           background-image: image-url("projects/mcom/mcom.png");
         }
         .desc {
-          font-size: 30px;
-          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
           max-width: 500px;
-          margin-top: 100px;
+          margin-top: 80px;
+          h3 {
+            color: white;
+          }
         }
       }
 
@@ -410,7 +409,7 @@ $main_headline_font_size: 24px;
         }
         .supporting_image {
           height: 1000px;
-          width: 400px;
+          max0width: 400px;
           margin-top: -450px;
           margin-right: -50px;
           background-repeat: no-repeat;
@@ -427,18 +426,17 @@ $main_headline_font_size: 24px;
       }
 
       .features_section {
-        padding: 100px 0;
+        padding: 50px 0;
         color: white;
         .inner_container {
+          margin: 30px 0;
           .img {
             width: 250px;
             height: 250px;
-            margin: auto;
-            margin-top: 50px;
+            margin: 40px auto 20px;
             opacity: 0.5;
             @include transition(all 1s ease-in-out);
             @include radius(50%);
-            margin-bottom: 50px;
             background-repeat: no-repeat;
             background-size: 100%; 
             &.feature_1 {
@@ -490,8 +488,8 @@ $main_headline_font_size: 24px;
         }
 
         .feature {
-          max-width: 240px;
-          margin: 50px auto 0;
+          max-width: 300px;
+          margin: 40px auto;
           .icon {
             width: 200px;
             height: 200px;
@@ -515,12 +513,11 @@ $main_headline_font_size: 24px;
           p {
             color: white;
             text-align: center;
-            max-width: 250px;
             margin-top: 10px;
           }
         }
         .phone {
-          width: 350px;
+          max-width: 350px;
           height: 730px;
           margin: 0 auto;
           background-repeat: no-repeat;
@@ -541,7 +538,7 @@ $main_headline_font_size: 24px;
 
 
     /*BCOM*/
-    .bcom_main_container {
+    .bcom_main_container  {
       background-color: #000;
       color: white;
       padding: 0 !important;
@@ -555,24 +552,13 @@ $main_headline_font_size: 24px;
           background-image: image-url("projects/mcom/bcom.png");
         }
         .desc {
-          font-size: 30px;
-          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
           max-width: 500px;
           margin-top: 100px;
+          h3 {
+            color: white;
+          }
         }
-/*        color: white;
-        padding: 100px 0;
-        .logo {
-          width: 250px;
-          height: 100px;
-          border: 1px solid white;
-          margin-top: 60px;
-          margin-bottom: 50px;
-        }
-        .desc {
-          font-size: $main_headline_font_size;
-          margin-bottom: 100px;
-        }*/
+
 
       }
 
@@ -638,13 +624,13 @@ $main_headline_font_size: 24px;
       .lookbook_section {
         
         .main_paragraph {
-          color: white;
           text-align: center;
-          margin: 50px 0 100px 0;
-          font-size: $main_headline_font_size;
-          font-family: "adelle", "Helvetica", Helvetica, Arial, sans-serif;
+          margin: 50px 0;
           @include scale(.9);
           @include transition(all 1s ease-in-out);
+          h3 {
+            color: white;
+          }
           &.start {
             @include scale(1);
           }
@@ -653,7 +639,6 @@ $main_headline_font_size: 24px;
       }
 
       .lookbook_images {
-        /*padding: 150px 0;*/
         .iphone_images {
           height: 1000px;
           margin: 0 auto;
@@ -670,5 +655,62 @@ $main_headline_font_size: 24px;
 
 
 
+  }
+}
+
+
+@media #{$small-only} { 
+  .projects_mcom {  
+    .main_mcombcom {
+      
+      // Macys
+      .mcom_main_container {
+        padding: 0;
+        .homepage_intro_section  {
+          .supporting_image.start {
+            margin: 0 auto;
+          }
+          .main_paragraph {
+            margin-top: 20px;
+            .icon {
+              display: none;
+            }
+          }
+          .feature_lists {
+            padding-left: 0;
+          }
+        }
+        .pdp_section .image_grid_holder {
+          height: 360px;
+        }
+      }
+
+      // Bloomindales
+      .bcom_main_container {
+
+        .homepage_intro_section {
+          height: 760px;
+          margin-top: 150px;
+          & > .image {
+            margin-top: -100px;
+            height: 300px;
+          }
+          .main_paragraph {
+            margin-top: 20px;
+            .icon {
+              display: none;
+            }
+          }
+          .feature_lists {
+            padding-left: 0;
+          }
+        }
+        .lookbook_images .iphone_images {
+          background-size: 100%;
+          height: 400px;
+        }
+      }
+
+    }  
   }
 }
